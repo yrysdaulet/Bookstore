@@ -1,7 +1,6 @@
 Bookstore 
 -------------------------------
 Application functionality:
- - User can 
  - login/register
  - view books
  - add books to library
