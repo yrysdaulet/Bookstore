@@ -1,0 +1,147 @@
+.top {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  top:0;
+  left:0;
+  height: 85px;
+  border-bottom:1.5px solid #202020;
+}
+#logo {
+  margin-top: -35px;
+  width: 300px;
+}
+#login, #signup {
+  border: none;
+  border-radius: 5px;
+  background-color: #202020;
+  color: white;
+  padding: 10px 14px;
+  margin: 10px;
+  font-family:Rockwell Extra Bold;
+  font-size: 15px;
+}
+#login:hover, #signup:hover {
+  border: 2px solid #E3B58F;
+  border-radius: 5px;
+}
+.categories {
+  margin-top: auto;
+  margin-left: -970px;
+  margin-right: 260px;
+  margin-bottom: 5px;
+}
+.categories a{
+  /*text-align: center;*/
+  text-decoration: none;
+  color: #202020;
+  font-size: 20px;
+  margin-right: 50px;
+  margin-bottom: 5px;
+}
+.categories a:hover{
+  color: #E3B58F;
+}
+#login-box {
+  margin-left: auto;
+}
+.login {
+  margin: 7px;
+}
+
+.bottom {
+  background-color: #202020;
+  color: white;
+  margin-bottom: -30px;
+  margin-right: -8px;
+  margin-left: -8px;
+  height: 500px;
+}
+
+.bottom-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  bottom: 0;
+  left:0;
+  margin-right: 60px;
+  margin-bottom: 20px;
+}
+.bottom-info p {
+  font-size: 20px;
+  margin-right: 40px;
+}
+.icons-container {
+  display: flex;
+  justify-content: center;
+}
+
+.icons {
+  width: 60px;
+  margin: -5px;
+}
+
+.icons1 {
+  display: flex;
+  align-items: center;
+  margin-top: -10px;
+  margin-right: 10px;
+}
+
+.icons1 img {
+  width: 25px;
+  margin-right: 5px;
+}
+
+.icons1 p {
+  font-size: 15px;
+  color: #E3B58F;
+  margin: 0;
+}
+.mid {
+  width: 800px;
+  margin-top: 50px;
+  margin-bottom: 200px;
+  margin-left: 30px;
+}
+#mid-photos1 {
+  width: 300px;
+  margin-top:300px
+}
+
+#mid-photos2 {
+  width: 250px;
+  margin-bottom: -180px;
+  margin-left: -100px;
+}
+#mid-photos3 {
+  width:270px;
+  margin-bottom: 50px;
+  margin-left: -150px;
+}
+#mid-photos4 {
+  width: 250px;
+  margin-bottom: 200px;
+  margin-left: -470px;
+}
+#words {
+  width: 600px;
+  font-size: 25px;
+  margin-left: 620px;
+  margin-top: 80px;
+  font-family: "Rockwell Extra";
+}
+#words-name {
+  color: #202020;
+  font-weight: bold;
+}
+#slogan {
+  width: 900px;
+  font-size: 30px;
+  color: #202020;
+  font-family: "Lucida Handwriting";
+  margin-left: 400px;
+  margin-top: -520px;
+}

@@ -1,450 +1,529 @@
-<div class="header" id="header">
-    <div class="columns is-relative is-mobile mx-0 my-0 is-centered">
-      <div class="column header-logo">
-        
-        <a href="/" class="branding inline-flex pt-1 overflow-hidden">
-          <img src="
-https://rails-assets-us.bookshop.org/ds/images/logo.041f4577edde0efff6b67907832d4c3dfd52407b.svg
-" alt="Bookshop.org logo">
-        </a>
-        
-      </div>
-      <div class="column header-search is-flex">
-        <div>
-          <a role="button" data-action="click->Nav--mobile-categories#open" class="navbar-burger mr-4" aria-label="menu" aria-expanded="false">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-
-        
-        
-<form id="searchbox" data-controller="Search--compact" data-search--compact-target="form" class="search-container field has-addons control-search" action="https://bookshop.org/search" method="get" style="min-width: auto" autocomplete="off" data-region-code="bookshop" data-instantsearch-url="https://services.bookshop.org/search-beta/us" data-instantsearch-api-key="" data-instantsearch-index="us-products" data-add-to-cart-text="Add to Cart" data-product-images-bucket-prefix="https://images-us.bookshop.org/ingram/" data-hits-per-page="5" data-cart-icon="
-https://rails-assets-us.bookshop.org/ds/images/icon-cart.e6f44c3a642742c967f95931785d55a1bc20d567.svg
-" data-cart-icon-dark="
-https://rails-assets-us.bookshop.org/ds/images/icon-cart-dark.18fa0753167fc851779ba495cf4fb6c50ab909e2.svg
-" data-gift-card-image-url="
-https://rails-assets-us.bookshop.org/ds/images/gift-card.509882e063c783a3a83a1e0611009c5f88457fe6.png
-">
-
-    <div class="control is-expanded">
-        <input type="text" value="" class="input search-input" data-search--compact-target="input" data-action="blur->Search--compact#collapseResults focus->Search--compact#expandResults" placeholder="Search books, authors, ISBNs" name="keywords" autocomplete="off">
-    </div>
-    <div class="control button-control">
-        <button type="submit" class="button is-secondary search-button">
-            <img src="
-https://rails-assets-us.bookshop.org/ds/images/search.179df46915b36d0fba2c0ab8f704467e37bb6558.svg
-" title="Search" alt="Search">
-        </button>
-    </div>
-    
-    
-
-<div data-search--compact-target="results" tabindex="0" class="box px-0 pt-0 pb-3 is-hidden mt-3 is-outlined has-outline-light search-results">
-    <div id="hits">
-        
-    </div>
-    <hr class="mb-3 mt-0">
-    <div class="is-size-s px-3 level">
-        <div class="level-left">
-            <div class="level-item">
-                <span id="stats"></span>
-            </div>
-        </div>
-        <div class="level-right">
-            <div class="level-item">
-                <span class="loading is-hidden" data-search--compact-target="loadingIndicator">
-                    Loading...
-                </span>
-            </div>
-            <div class="level-item">
-                <a href="#" data-action="click->Search--compact#clear" data-search--compact-target="clearButton" class="link has-text-base has-text-right">Clear</a>
-            </div>
-        </div>
-    </div>
+<div class="top">
+  <div class="logo">
+    <img id="logo" src="assets/images/logo.png">
+  </div>
+  <div class="login" id="login-box">
+    <button id="login">Log in</button>
+  </div>
+  <div class="login">
+    <button id="signup">Sign up</button>
+  </div>
+  <div class="categories">
+    <a href="">Categories</a>
+    <a href="">Best Sellers</a>
+    <a href="">Fiction</a>
+    <a href="">Nonfiction</a>
+    <a href="">Kids</a>
+    <a href="">Fantasy</a>
+  </div>
 </div>
 
-    
-</form>
+<div class="mid">
+  <div class="photos">
+    <img id="mid-photos1" src="assets/images/photo3.png">
+    <img id="mid-photos2" src="assets/images/photo2.png">
+    <img id="mid-photos3" src="assets/images/photo1.png">
+    <img id="mid-photos4" src="assets/images/photo4.png">
+  </div>
+  <div id="slogan">
+    <h1>Where Words Come Alive</h1>
+  </div>
+  <div id="words">
+    <p><span id="words-name">WORD WONDERS</span> is more than just a bookstore. There is something undeniably magical about bookstores. Perhaps it is the smell of old pages, the feel of a well-worn cover, or the thrill of discovering a hidden gem. Whatever it may be, bookstores hold a special place in the hearts of readers everywhere.</p>
+    <p>In a world where everything seems to be moving faster and faster, bookstores offer a chance to slow down and savor the simple pleasures of life. They remind us of the power of storytelling and the importance of human connection. For these reasons and more, bookstores will always hold a special place in our hearts.</p>
+  </div>
+</div>
 
 
-        
-      </div>
-      <div class="column is-narrow-touch is-2-mobile has-text-right is-size-m is-flex is-justify-content-flex-end header-actions">
-        <nav class="level is-mobile">
-          <div class="level-left"></div>
-          <div class="level-right">
-            <div class="level-item has-text-centered is-bold is-hidden-mobile">
-              <a href="https://bookshop.org/pages/bookstores">Choose a Bookstore</a>
-            </div>
-            
-            <div class="level-item has-text-centered is-bold is-hidden-touch">
-              <a href="https://bookshop.org/account">
-                
-                
-                Sign In
-                
-              </a>
-            </div>
-            <div class="level-item has-text-centered">
-              <a href="https://bookshop.org/account" class="is-hidden-desktop">
-                <img src="
-https://rails-assets-us.bookshop.org/ds/images/user.961000f9a3828a07da2d452f44021f9cfbc4f7b0.svg
-" alt="Account">
-              </a>
-            </div>
-            
-            <div class="level-item has-text-centered">
-              <a href="/cart" class="cart-link" style="padding-top: 2px;">
-                <img src="
-https://rails-assets-us.bookshop.org/ds/images/basket.76e8fe7b84404cf9232df8188db62fd33e0c6453.svg
-" alt="Shopping Cart">
-                
-              </a>
-            </div>
-          </div>
-        </nav>
-      </div>
-      <div class="header-mobile-nav" data-nav--mobile-categories-target="headerMobileNav">
-        <div class="mobile-nav">
-          <div class="mobile-nav-header">
-            <button class="close-icon button" data-action="click->Nav--mobile-categories#close">
-              <img src="
-https://rails-assets-us.bookshop.org/ds/images/close.4ca4f290f9c3ba320934f2151e036758ec8c856e.svg
-" alt="Close">
-            </button>
-            <a href="/location" class="button is-tertiary">
-              
-              <img src="
-https://rails-assets-us.bookshop.org/ds/images/us-flag.8a71223aeb7989bfd770674530fdd0a9c0312510.svg
-" width="24" height="18" alt="Bookshop.org logo">
-              
-              <span class="pl-2">us</span>
-            </a>
-          </div>
-          <div data-nav--mobile-categories-target="mobileNavMenu" class="is-flex mobile-nav-menu">
-            <aside data-nav--mobile-categories-target="mobileNavMainMenu" class="mobile-nav-main-menu">
-              <ul class="menu-list">
-                <li><a href="https://bookshop.org/pages/bookstores">Choose a Bookstore</a></li>
-                
-                <li class="navbar-item has-dropdown is-hoverable">
-                  
-                  <a id="Special+Offers-sub-menu" href="https://bookshop.org/lists/special-offers-on-bookshop-org">
-                    Special Offers
-                  </a>
-                  
-                </li>
-                
-                <li class="navbar-item has-dropdown is-hoverable">
-                  
-                  <a id="Gift+Cards-sub-menu" href="https://bookshop.org/gift_cards">
-                    Gift Cards
-                  </a>
-                  
-                </li>
-                
-                <li class="navbar-item has-dropdown is-hoverable">
-                  
-                  <a id="New+Books-sub-menu" href="https://bookshop.org/lists/new-releases-this-week">
-                    New Books
-                  </a>
-                  
-                </li>
-                
-                <li class="navbar-item has-dropdown is-hoverable">
-                  
-                  <a id="Wishlists+%26+Registries-sub-menu" href="https://bookshop.org/info/wishlist-and-registry">
-                    Wishlists &amp; Registries
-                  </a>
-                  
-                </li>
-                
-                <li class="navbar-item has-dropdown is-hoverable">
-                  
-                  <a id="Best+Sellers-sub-menu" href="/categories/m/popular-books">
-                    Best Sellers
-                  </a>
-                  
-                </li>
-                
-                <li class="navbar-item has-dropdown is-hoverable">
-                  
-                  <a id="Fiction-sub-menu" href="/categories/m/fiction" data-action="click->Nav--mobile-categories#openSubItem" data-subnav-target-id="Fiction">
-                    Fiction
-                    <img src="
-https://rails-assets-us.bookshop.org/ds/images/chevron-right.7be3f13058fcb4713eaf7866bad97d0f6a752ed3.svg
-" title="Fiction">
-                  </a>
-                  
-                </li>
-                
-                <li class="navbar-item has-dropdown is-hoverable">
-                  
-                  <a id="Nonfiction-sub-menu" href="/categories/m/nonfiction" data-action="click->Nav--mobile-categories#openSubItem" data-subnav-target-id="Nonfiction">
-                    Nonfiction
-                    <img src="
-https://rails-assets-us.bookshop.org/ds/images/chevron-right.7be3f13058fcb4713eaf7866bad97d0f6a752ed3.svg
-" title="Nonfiction">
-                  </a>
-                  
-                </li>
-                
-                <li class="navbar-item has-dropdown is-hoverable">
-                  
-                  <a id="YA-sub-menu" href="/categories/m/teen-young-adult">
-                    YA
-                  </a>
-                  
-                </li>
-                
-                <li class="navbar-item has-dropdown is-hoverable">
-                  
-                  <a id="Kids-sub-menu" href="/categories/m/children-s-books">
-                    Kids
-                  </a>
-                  
-                </li>
-                
-                <li class="navbar-item has-dropdown is-hoverable">
-                  
-                  <a id="Games+%26+Puzzles-sub-menu" href="/categories/m/gifts-games-puzzles">
-                    Games &amp; Puzzles
-                  </a>
-                  
-                </li>
-                
-                <li class="navbar-item has-dropdown is-hoverable">
-                  
-                  <a id="En+Espa%C3%B1ol-sub-menu" href="/categories/m/fiction/spanish-language">
-                    En Español
-                  </a>
-                  
-                </li>
-                
-              </ul>
-            </aside>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            <aside class="mobile-nav-secondary-menu" data-subnav-id="Fiction">
-              <ul class="menu-list">
-                <li>
-                  <a href="#" data-action="click->Nav--mobile-categories#closeSubItem" class="back-to-main-menu">
-                    <img src="
-https://rails-assets-us.bookshop.org/ds/images/chevron-left.c204156dc670372f40706c7696d741a465917f43.svg
-" title="Fiction">
-                    Fiction
-                  </a>
-                </li>
-                
-                <li><a href="/categories/m/fiction/romance">Romance</a></li>
-                
-                <li><a href="/categories/m/fiction/comics-graphic-novels">Comics &amp; Graphic Novels</a></li>
-                
-                <li><a href="/categories/m/fiction/historical-fiction">Historical Fiction</a></li>
-                
-                <li><a href="/categories/m/fiction/horror">Horror</a></li>
-                
-                <li><a href="/categories/m/fiction/literature-fiction">Literature &amp; Fiction</a></li>
-                
-                <li><a href="/categories/m/fiction/manga">Manga</a></li>
-                
-                <li><a href="/categories/m/fiction/mystery-thrillers-true-crime">Mystery, Thrillers, &amp; Crime</a></li>
-                
-                <li><a href="/categories/m/fiction/poetry">Poetry</a></li>
-                
-                <li><a href="/categories/m/fiction/science-fiction">Science Fiction</a></li>
-                
-                <li><a href="/categories/m/fiction/fantasy">Fantasy</a></li>
-                
-                <li><a href="/categories/m/fiction/lgbtq-fiction">LGBTQ+ Fiction</a></li>
-                
-              </ul>
-            </aside>
-            
-            
-            
-            <aside class="mobile-nav-secondary-menu" data-subnav-id="Nonfiction">
-              <ul class="menu-list">
-                <li>
-                  <a href="#" data-action="click->Nav--mobile-categories#closeSubItem" class="back-to-main-menu">
-                    <img src="
-https://rails-assets-us.bookshop.org/ds/images/chevron-left.c204156dc670372f40706c7696d741a465917f43.svg
-" title="Nonfiction">
-                    Nonfiction
-                  </a>
-                </li>
-                
-                <li><a href="/categories/m/nonfiction/arts-photography">Arts &amp; Photography</a></li>
-                
-                <li><a href="/categories/m/nonfiction/biography-memoir">Biography &amp; Memoir</a></li>
-                
-                <li><a href="/categories/m/nonfiction/business-investing">Business &amp; Investing </a></li>
-                
-                <li><a href="/categories/m/nonfiction/cooking-wine">Cooking &amp; Wine</a></li>
-                
-                <li><a href="/categories/m/nonfiction/history">History</a></li>
-                
-                <li><a href="/categories/m/nonfiction/humor-games">Humor &amp; Games</a></li>
-                
-                <li><a href="/categories/m/nonfiction/science-technology">Science &amp; Technology</a></li>
-                
-                <li><a href="/categories/m/nonfiction/self-development-hobbies">Self Development &amp; Hobbies</a></li>
-                
-                <li><a href="/categories/m/nonfiction/spirituality-and-religion">Spirituality &amp; Religion</a></li>
-                
-                <li><a href="/categories/m/nonfiction/travel">Travel</a></li>
-                
-                <li><a href="/categories/m/nonfiction/lgbtq-nonfiction">LGBTQ+ Nonfiction</a></li>
-                
-              </ul>
-            </aside>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-          </div>
-        </div>
-      </div>
+<div class="bottom">
+  <div id="info" class="bottom-info">
+    <p>Follow us</p>
+    <div class="icons-container">
+      <img class="icons" src="assets/images/instagram.png">
+      <img class="icons" src="assets/images/facebook.png">
+      <img class="icons" src="assets/images/tiktok.png">
     </div>
-    <div class="sub-header">
-      <div class="tabs is-centered">
-        <ul class="navbar">
-          
-          <li class="navbar-item has-dropdown is-hoverable">
-            <a href="https://bookshop.org/lists/special-offers-on-bookshop-org">Special Offers</a>
-            
-          </li>
-          
-          <li class="navbar-item has-dropdown is-hoverable">
-            <a href="https://bookshop.org/gift_cards">Gift Cards</a>
-            
-          </li>
-          
-          <li class="navbar-item has-dropdown is-hoverable">
-            <a href="https://bookshop.org/lists/new-releases-this-week">New Books</a>
-            
-          </li>
-          
-          <li class="navbar-item has-dropdown is-hoverable">
-            <a href="https://bookshop.org/info/wishlist-and-registry">Wishlists &amp; Registries</a>
-            
-          </li>
-          
-          <li class="navbar-item has-dropdown is-hoverable">
-            <a href="/categories/m/popular-books">Best Sellers</a>
-            
-          </li>
-          
-          <li class="navbar-item has-dropdown is-hoverable">
-            <a href="/categories/m/fiction">Fiction</a>
-            
-            <div class="navbar-dropdown">
-              <div class="navbar-dropdown-list">
-                
-                <a href="/categories/m/fiction/romance"><span>Romance</span></a>
-                
-                <a href="/categories/m/fiction/comics-graphic-novels"><span>Comics &amp; Graphic Novels</span></a>
-                
-                <a href="/categories/m/fiction/historical-fiction"><span>Historical Fiction</span></a>
-                
-                <a href="/categories/m/fiction/horror"><span>Horror</span></a>
-                
-                <a href="/categories/m/fiction/literature-fiction"><span>Literature &amp; Fiction</span></a>
-                
-                <a href="/categories/m/fiction/manga"><span>Manga</span></a>
-                
-                <a href="/categories/m/fiction/mystery-thrillers-true-crime"><span>Mystery, Thrillers, &amp; Crime</span></a>
-                
-                <a href="/categories/m/fiction/poetry"><span>Poetry</span></a>
-                
-                <a href="/categories/m/fiction/science-fiction"><span>Science Fiction</span></a>
-                
-                <a href="/categories/m/fiction/fantasy"><span>Fantasy</span></a>
-                
-                <a href="/categories/m/fiction/lgbtq-fiction"><span>LGBTQ+ Fiction</span></a>
-                
-              </div>
-            </div>
-            
-          </li>
-          
-          <li class="navbar-item has-dropdown is-hoverable">
-            <a href="/categories/m/nonfiction">Nonfiction</a>
-            
-            <div class="navbar-dropdown">
-              <div class="navbar-dropdown-list">
-                
-                <a href="/categories/m/nonfiction/arts-photography"><span>Arts &amp; Photography</span></a>
-                
-                <a href="/categories/m/nonfiction/biography-memoir"><span>Biography &amp; Memoir</span></a>
-                
-                <a href="/categories/m/nonfiction/business-investing"><span>Business &amp; Investing </span></a>
-                
-                <a href="/categories/m/nonfiction/cooking-wine"><span>Cooking &amp; Wine</span></a>
-                
-                <a href="/categories/m/nonfiction/history"><span>History</span></a>
-                
-                <a href="/categories/m/nonfiction/humor-games"><span>Humor &amp; Games</span></a>
-                
-                <a href="/categories/m/nonfiction/science-technology"><span>Science &amp; Technology</span></a>
-                
-                <a href="/categories/m/nonfiction/self-development-hobbies"><span>Self Development &amp; Hobbies</span></a>
-                
-                <a href="/categories/m/nonfiction/spirituality-and-religion"><span>Spirituality &amp; Religion</span></a>
-                
-                <a href="/categories/m/nonfiction/travel"><span>Travel</span></a>
-                
-                <a href="/categories/m/nonfiction/lgbtq-nonfiction"><span>LGBTQ+ Nonfiction</span></a>
-                
-              </div>
-            </div>
-            
-          </li>
-          
-          <li class="navbar-item has-dropdown is-hoverable">
-            <a href="/categories/m/teen-young-adult">YA</a>
-            
-          </li>
-          
-          <li class="navbar-item has-dropdown is-hoverable">
-            <a href="/categories/m/children-s-books">Kids</a>
-            
-          </li>
-          
-          <li class="navbar-item has-dropdown is-hoverable">
-            <a href="/categories/m/gifts-games-puzzles">Games &amp; Puzzles</a>
-            
-          </li>
-          
-          <li class="navbar-item has-dropdown is-hoverable">
-            <a href="/categories/m/fiction/spanish-language">En Español</a>
-            
-          </li>
-          
-        </ul>
+    <p>Contact us</p>
+    <div class="icons-container">
+      <div class="icons1">
+        <img src="assets/images/phone.png">
+        <p>8 (777) 567-34-21</p>
       </div>
-    </div>
-    <div class="raised-banner">
-      <a href="https://bookshop.org/pages/about">
-        <span class="has-text-secondary is-bold is-size-l">$25,476,388.07</span>
-        raised for local bookstores
-      </a>
+      <br>
+      <div class="icons1">
+        <img src="assets/images/mail.png">
+        <p>wordwonders@gmail.com</p>
+      </div>
     </div>
   </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="header" id="header">-->
+<!--    <div class="columns is-relative is-mobile mx-0 my-0 is-centered">-->
+<!--      <div class="column header-logo">-->
+<!--        -->
+<!--        <a href="/" class="branding inline-flex pt-1 overflow-hidden">-->
+<!--          <img src="-->
+<!--https://rails-assets-us.bookshop.org/ds/images/logo.041f4577edde0efff6b67907832d4c3dfd52407b.svg-->
+<!--" alt="Bookshop.org logo">-->
+<!--        </a>-->
+<!--        -->
+<!--      </div>-->
+<!--      <div class="column header-search is-flex">-->
+<!--        <div>-->
+<!--          <a role="button" data-action="click->Nav&#45;&#45;mobile-categories#open" class="navbar-burger mr-4" aria-label="menu" aria-expanded="false">-->
+<!--            <span aria-hidden="true"></span>-->
+<!--            <span aria-hidden="true"></span>-->
+<!--            <span aria-hidden="true"></span>-->
+<!--          </a>-->
+<!--        </div>-->
+
+<!--        -->
+<!--        -->
+<!--<form id="searchbox" data-controller="Search&#45;&#45;compact" data-search&#45;&#45;compact-target="form" class="search-container field has-addons control-search" action="https://bookshop.org/search" method="get" style="min-width: auto" autocomplete="off" data-region-code="bookshop" data-instantsearch-url="https://services.bookshop.org/search-beta/us" data-instantsearch-api-key="" data-instantsearch-index="us-products" data-add-to-cart-text="Add to Cart" data-product-images-bucket-prefix="https://images-us.bookshop.org/ingram/" data-hits-per-page="5" data-cart-icon="-->
+<!--https://rails-assets-us.bookshop.org/ds/images/icon-cart.e6f44c3a642742c967f95931785d55a1bc20d567.svg-->
+<!--" data-cart-icon-dark="-->
+<!--https://rails-assets-us.bookshop.org/ds/images/icon-cart-dark.18fa0753167fc851779ba495cf4fb6c50ab909e2.svg-->
+<!--" data-gift-card-image-url="-->
+<!--https://rails-assets-us.bookshop.org/ds/images/gift-card.509882e063c783a3a83a1e0611009c5f88457fe6.png-->
+<!--">-->
+
+<!--    <div class="control is-expanded">-->
+<!--        <input type="text" value="" class="input search-input" data-search&#45;&#45;compact-target="input" data-action="blur->Search&#45;&#45;compact#collapseResults focus->Search&#45;&#45;compact#expandResults" placeholder="Search books, authors, ISBNs" name="keywords" autocomplete="off">-->
+<!--    </div>-->
+<!--    <div class="control button-control">-->
+<!--        <button type="submit" class="button is-secondary search-button">-->
+<!--            <img src="-->
+<!--https://rails-assets-us.bookshop.org/ds/images/search.179df46915b36d0fba2c0ab8f704467e37bb6558.svg-->
+<!--" title="Search" alt="Search">-->
+<!--        </button>-->
+<!--    </div>-->
+<!--    -->
+<!--    -->
+
+<!--<div data-search&#45;&#45;compact-target="results" tabindex="0" class="box px-0 pt-0 pb-3 is-hidden mt-3 is-outlined has-outline-light search-results">-->
+<!--    <div id="hits">-->
+<!--        -->
+<!--    </div>-->
+<!--    <hr class="mb-3 mt-0">-->
+<!--    <div class="is-size-s px-3 level">-->
+<!--        <div class="level-left">-->
+<!--            <div class="level-item">-->
+<!--                <span id="stats"></span>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="level-right">-->
+<!--            <div class="level-item">-->
+<!--                <span class="loading is-hidden" data-search&#45;&#45;compact-target="loadingIndicator">-->
+<!--                    Loading...-->
+<!--                </span>-->
+<!--            </div>-->
+<!--            <div class="level-item">-->
+<!--                <a href="#" data-action="click->Search&#45;&#45;compact#clear" data-search&#45;&#45;compact-target="clearButton" class="link has-text-base has-text-right">Clear</a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--    -->
+<!--</form>-->
+
+
+<!--        -->
+<!--      </div>-->
+<!--      <div class="column is-narrow-touch is-2-mobile has-text-right is-size-m is-flex is-justify-content-flex-end header-actions">-->
+<!--        <nav class="level is-mobile">-->
+<!--          <div class="level-left"></div>-->
+<!--          <div class="level-right">-->
+<!--            <div class="level-item has-text-centered is-bold is-hidden-mobile">-->
+<!--              <a href="https://bookshop.org/pages/bookstores">Choose a Bookstore</a>-->
+<!--            </div>-->
+<!--            -->
+<!--            <div class="level-item has-text-centered is-bold is-hidden-touch">-->
+<!--              <a href="https://bookshop.org/account">-->
+<!--                -->
+<!--                -->
+<!--                Sign In-->
+<!--                -->
+<!--              </a>-->
+<!--            </div>-->
+<!--            <div class="level-item has-text-centered">-->
+<!--              <a href="https://bookshop.org/account" class="is-hidden-desktop">-->
+<!--                <img src="-->
+<!--https://rails-assets-us.bookshop.org/ds/images/user.961000f9a3828a07da2d452f44021f9cfbc4f7b0.svg-->
+<!--" alt="Account">-->
+<!--              </a>-->
+<!--            </div>-->
+<!--            -->
+<!--            <div class="level-item has-text-centered">-->
+<!--              <a href="/cart" class="cart-link" style="padding-top: 2px;">-->
+<!--                <img src="-->
+<!--https://rails-assets-us.bookshop.org/ds/images/basket.76e8fe7b84404cf9232df8188db62fd33e0c6453.svg-->
+<!--" alt="Shopping Cart">-->
+<!--                -->
+<!--              </a>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </nav>-->
+<!--      </div>-->
+<!--      <div class="header-mobile-nav" data-nav&#45;&#45;mobile-categories-target="headerMobileNav">-->
+<!--        <div class="mobile-nav">-->
+<!--          <div class="mobile-nav-header">-->
+<!--            <button class="close-icon button" data-action="click->Nav&#45;&#45;mobile-categories#close">-->
+<!--              <img src="-->
+<!--https://rails-assets-us.bookshop.org/ds/images/close.4ca4f290f9c3ba320934f2151e036758ec8c856e.svg-->
+<!--" alt="Close">-->
+<!--            </button>-->
+<!--            <a href="/location" class="button is-tertiary">-->
+<!--              -->
+<!--              <img src="-->
+<!--https://rails-assets-us.bookshop.org/ds/images/us-flag.8a71223aeb7989bfd770674530fdd0a9c0312510.svg-->
+<!--" width="24" height="18" alt="Bookshop.org logo">-->
+<!--              -->
+<!--              <span class="pl-2">us</span>-->
+<!--            </a>-->
+<!--          </div>-->
+<!--          <div data-nav&#45;&#45;mobile-categories-target="mobileNavMenu" class="is-flex mobile-nav-menu">-->
+<!--            <aside data-nav&#45;&#45;mobile-categories-target="mobileNavMainMenu" class="mobile-nav-main-menu">-->
+<!--              <ul class="menu-list">-->
+<!--                <li><a href="https://bookshop.org/pages/bookstores">Choose a Bookstore</a></li>-->
+<!--                -->
+<!--                <li class="navbar-item has-dropdown is-hoverable">-->
+<!--                  -->
+<!--                  <a id="Special+Offers-sub-menu" href="https://bookshop.org/lists/special-offers-on-bookshop-org">-->
+<!--                    Special Offers-->
+<!--                  </a>-->
+<!--                  -->
+<!--                </li>-->
+<!--                -->
+<!--                <li class="navbar-item has-dropdown is-hoverable">-->
+<!--                  -->
+<!--                  <a id="Gift+Cards-sub-menu" href="https://bookshop.org/gift_cards">-->
+<!--                    Gift Cards-->
+<!--                  </a>-->
+<!--                  -->
+<!--                </li>-->
+<!--                -->
+<!--                <li class="navbar-item has-dropdown is-hoverable">-->
+<!--                  -->
+<!--                  <a id="New+Books-sub-menu" href="https://bookshop.org/lists/new-releases-this-week">-->
+<!--                    New Books-->
+<!--                  </a>-->
+<!--                  -->
+<!--                </li>-->
+<!--                -->
+<!--                <li class="navbar-item has-dropdown is-hoverable">-->
+<!--                  -->
+<!--                  <a id="Wishlists+%26+Registries-sub-menu" href="https://bookshop.org/info/wishlist-and-registry">-->
+<!--                    Wishlists &amp; Registries-->
+<!--                  </a>-->
+<!--                  -->
+<!--                </li>-->
+<!--                -->
+<!--                <li class="navbar-item has-dropdown is-hoverable">-->
+<!--                  -->
+<!--                  <a id="Best+Sellers-sub-menu" href="/categories/m/popular-books">-->
+<!--                    Best Sellers-->
+<!--                  </a>-->
+<!--                  -->
+<!--                </li>-->
+<!--                -->
+<!--                <li class="navbar-item has-dropdown is-hoverable">-->
+<!--                  -->
+<!--                  <a id="Fiction-sub-menu" href="/categories/m/fiction" data-action="click->Nav&#45;&#45;mobile-categories#openSubItem" data-subnav-target-id="Fiction">-->
+<!--                    Fiction-->
+<!--                    <img src="-->
+<!--https://rails-assets-us.bookshop.org/ds/images/chevron-right.7be3f13058fcb4713eaf7866bad97d0f6a752ed3.svg-->
+<!--" title="Fiction">-->
+<!--                  </a>-->
+<!--                  -->
+<!--                </li>-->
+<!--                -->
+<!--                <li class="navbar-item has-dropdown is-hoverable">-->
+<!--                  -->
+<!--                  <a id="Nonfiction-sub-menu" href="/categories/m/nonfiction" data-action="click->Nav&#45;&#45;mobile-categories#openSubItem" data-subnav-target-id="Nonfiction">-->
+<!--                    Nonfiction-->
+<!--                    <img src="-->
+<!--https://rails-assets-us.bookshop.org/ds/images/chevron-right.7be3f13058fcb4713eaf7866bad97d0f6a752ed3.svg-->
+<!--" title="Nonfiction">-->
+<!--                  </a>-->
+<!--                  -->
+<!--                </li>-->
+<!--                -->
+<!--                <li class="navbar-item has-dropdown is-hoverable">-->
+<!--                  -->
+<!--                  <a id="YA-sub-menu" href="/categories/m/teen-young-adult">-->
+<!--                    YA-->
+<!--                  </a>-->
+<!--                  -->
+<!--                </li>-->
+<!--                -->
+<!--                <li class="navbar-item has-dropdown is-hoverable">-->
+<!--                  -->
+<!--                  <a id="Kids-sub-menu" href="/categories/m/children-s-books">-->
+<!--                    Kids-->
+<!--                  </a>-->
+<!--                  -->
+<!--                </li>-->
+<!--                -->
+<!--                <li class="navbar-item has-dropdown is-hoverable">-->
+<!--                  -->
+<!--                  <a id="Games+%26+Puzzles-sub-menu" href="/categories/m/gifts-games-puzzles">-->
+<!--                    Games &amp; Puzzles-->
+<!--                  </a>-->
+<!--                  -->
+<!--                </li>-->
+<!--                -->
+<!--                <li class="navbar-item has-dropdown is-hoverable">-->
+<!--                  -->
+<!--                  <a id="En+Espa%C3%B1ol-sub-menu" href="/categories/m/fiction/spanish-language">-->
+<!--                    En Español-->
+<!--                  </a>-->
+<!--                  -->
+<!--                </li>-->
+<!--                -->
+<!--              </ul>-->
+<!--            </aside>-->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            <aside class="mobile-nav-secondary-menu" data-subnav-id="Fiction">-->
+<!--              <ul class="menu-list">-->
+<!--                <li>-->
+<!--                  <a href="#" data-action="click->Nav&#45;&#45;mobile-categories#closeSubItem" class="back-to-main-menu">-->
+<!--                    <img src="-->
+<!--https://rails-assets-us.bookshop.org/ds/images/chevron-left.c204156dc670372f40706c7696d741a465917f43.svg-->
+<!--" title="Fiction">-->
+<!--                    Fiction-->
+<!--                  </a>-->
+<!--                </li>-->
+<!--                -->
+<!--                <li><a href="/categories/m/fiction/romance">Romance</a></li>-->
+<!--                -->
+<!--                <li><a href="/categories/m/fiction/comics-graphic-novels">Comics &amp; Graphic Novels</a></li>-->
+<!--                -->
+<!--                <li><a href="/categories/m/fiction/historical-fiction">Historical Fiction</a></li>-->
+<!--                -->
+<!--                <li><a href="/categories/m/fiction/horror">Horror</a></li>-->
+<!--                -->
+<!--                <li><a href="/categories/m/fiction/literature-fiction">Literature &amp; Fiction</a></li>-->
+<!--                -->
+<!--                <li><a href="/categories/m/fiction/manga">Manga</a></li>-->
+<!--                -->
+<!--                <li><a href="/categories/m/fiction/mystery-thrillers-true-crime">Mystery, Thrillers, &amp; Crime</a></li>-->
+<!--                -->
+<!--                <li><a href="/categories/m/fiction/poetry">Poetry</a></li>-->
+<!--                -->
+<!--                <li><a href="/categories/m/fiction/science-fiction">Science Fiction</a></li>-->
+<!--                -->
+<!--                <li><a href="/categories/m/fiction/fantasy">Fantasy</a></li>-->
+<!--                -->
+<!--                <li><a href="/categories/m/fiction/lgbtq-fiction">LGBTQ+ Fiction</a></li>-->
+<!--                -->
+<!--              </ul>-->
+<!--            </aside>-->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            <aside class="mobile-nav-secondary-menu" data-subnav-id="Nonfiction">-->
+<!--              <ul class="menu-list">-->
+<!--                <li>-->
+<!--                  <a href="#" data-action="click->Nav&#45;&#45;mobile-categories#closeSubItem" class="back-to-main-menu">-->
+<!--                    <img src="-->
+<!--https://rails-assets-us.bookshop.org/ds/images/chevron-left.c204156dc670372f40706c7696d741a465917f43.svg-->
+<!--" title="Nonfiction">-->
+<!--                    Nonfiction-->
+<!--                  </a>-->
+<!--                </li>-->
+<!--                -->
+<!--                <li><a href="/categories/m/nonfiction/arts-photography">Arts &amp; Photography</a></li>-->
+<!--                -->
+<!--                <li><a href="/categories/m/nonfiction/biography-memoir">Biography &amp; Memoir</a></li>-->
+<!--                -->
+<!--                <li><a href="/categories/m/nonfiction/business-investing">Business &amp; Investing </a></li>-->
+<!--                -->
+<!--                <li><a href="/categories/m/nonfiction/cooking-wine">Cooking &amp; Wine</a></li>-->
+<!--                -->
+<!--                <li><a href="/categories/m/nonfiction/history">History</a></li>-->
+<!--                -->
+<!--                <li><a href="/categories/m/nonfiction/humor-games">Humor &amp; Games</a></li>-->
+<!--                -->
+<!--                <li><a href="/categories/m/nonfiction/science-technology">Science &amp; Technology</a></li>-->
+<!--                -->
+<!--                <li><a href="/categories/m/nonfiction/self-development-hobbies">Self Development &amp; Hobbies</a></li>-->
+<!--                -->
+<!--                <li><a href="/categories/m/nonfiction/spirituality-and-religion">Spirituality &amp; Religion</a></li>-->
+<!--                -->
+<!--                <li><a href="/categories/m/nonfiction/travel">Travel</a></li>-->
+<!--                -->
+<!--                <li><a href="/categories/m/nonfiction/lgbtq-nonfiction">LGBTQ+ Nonfiction</a></li>-->
+<!--                -->
+<!--              </ul>-->
+<!--            </aside>-->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="sub-header">-->
+<!--      <div class="tabs is-centered">-->
+<!--        <ul class="navbar">-->
+<!--          -->
+<!--          <li class="navbar-item has-dropdown is-hoverable">-->
+<!--            <a href="https://bookshop.org/lists/special-offers-on-bookshop-org">Special Offers</a>-->
+<!--            -->
+<!--          </li>-->
+<!--          -->
+<!--          <li class="navbar-item has-dropdown is-hoverable">-->
+<!--            <a href="https://bookshop.org/gift_cards">Gift Cards</a>-->
+<!--            -->
+<!--          </li>-->
+<!--          -->
+<!--          <li class="navbar-item has-dropdown is-hoverable">-->
+<!--            <a href="https://bookshop.org/lists/new-releases-this-week">New Books</a>-->
+<!--            -->
+<!--          </li>-->
+<!--          -->
+<!--          <li class="navbar-item has-dropdown is-hoverable">-->
+<!--            <a href="https://bookshop.org/info/wishlist-and-registry">Wishlists &amp; Registries</a>-->
+<!--            -->
+<!--          </li>-->
+<!--          -->
+<!--          <li class="navbar-item has-dropdown is-hoverable">-->
+<!--            <a href="/categories/m/popular-books">Best Sellers</a>-->
+<!--            -->
+<!--          </li>-->
+<!--          -->
+<!--          <li class="navbar-item has-dropdown is-hoverable">-->
+<!--            <a href="/categories/m/fiction">Fiction</a>-->
+<!--            -->
+<!--            <div class="navbar-dropdown">-->
+<!--              <div class="navbar-dropdown-list">-->
+<!--                -->
+<!--                <a href="/categories/m/fiction/romance"><span>Romance</span></a>-->
+<!--                -->
+<!--                <a href="/categories/m/fiction/comics-graphic-novels"><span>Comics &amp; Graphic Novels</span></a>-->
+<!--                -->
+<!--                <a href="/categories/m/fiction/historical-fiction"><span>Historical Fiction</span></a>-->
+<!--                -->
+<!--                <a href="/categories/m/fiction/horror"><span>Horror</span></a>-->
+<!--                -->
+<!--                <a href="/categories/m/fiction/literature-fiction"><span>Literature &amp; Fiction</span></a>-->
+<!--                -->
+<!--                <a href="/categories/m/fiction/manga"><span>Manga</span></a>-->
+<!--                -->
+<!--                <a href="/categories/m/fiction/mystery-thrillers-true-crime"><span>Mystery, Thrillers, &amp; Crime</span></a>-->
+<!--                -->
+<!--                <a href="/categories/m/fiction/poetry"><span>Poetry</span></a>-->
+<!--                -->
+<!--                <a href="/categories/m/fiction/science-fiction"><span>Science Fiction</span></a>-->
+<!--                -->
+<!--                <a href="/categories/m/fiction/fantasy"><span>Fantasy</span></a>-->
+<!--                -->
+<!--                <a href="/categories/m/fiction/lgbtq-fiction"><span>LGBTQ+ Fiction</span></a>-->
+<!--                -->
+<!--              </div>-->
+<!--            </div>-->
+<!--            -->
+<!--          </li>-->
+<!--          -->
+<!--          <li class="navbar-item has-dropdown is-hoverable">-->
+<!--            <a href="/categories/m/nonfiction">Nonfiction</a>-->
+<!--            -->
+<!--            <div class="navbar-dropdown">-->
+<!--              <div class="navbar-dropdown-list">-->
+<!--                -->
+<!--                <a href="/categories/m/nonfiction/arts-photography"><span>Arts &amp; Photography</span></a>-->
+<!--                -->
+<!--                <a href="/categories/m/nonfiction/biography-memoir"><span>Biography &amp; Memoir</span></a>-->
+<!--                -->
+<!--                <a href="/categories/m/nonfiction/business-investing"><span>Business &amp; Investing </span></a>-->
+<!--                -->
+<!--                <a href="/categories/m/nonfiction/cooking-wine"><span>Cooking &amp; Wine</span></a>-->
+<!--                -->
+<!--                <a href="/categories/m/nonfiction/history"><span>History</span></a>-->
+<!--                -->
+<!--                <a href="/categories/m/nonfiction/humor-games"><span>Humor &amp; Games</span></a>-->
+<!--                -->
+<!--                <a href="/categories/m/nonfiction/science-technology"><span>Science &amp; Technology</span></a>-->
+<!--                -->
+<!--                <a href="/categories/m/nonfiction/self-development-hobbies"><span>Self Development &amp; Hobbies</span></a>-->
+<!--                -->
+<!--                <a href="/categories/m/nonfiction/spirituality-and-religion"><span>Spirituality &amp; Religion</span></a>-->
+<!--                -->
+<!--                <a href="/categories/m/nonfiction/travel"><span>Travel</span></a>-->
+<!--                -->
+<!--                <a href="/categories/m/nonfiction/lgbtq-nonfiction"><span>LGBTQ+ Nonfiction</span></a>-->
+<!--                -->
+<!--              </div>-->
+<!--            </div>-->
+<!--            -->
+<!--          </li>-->
+<!--          -->
+<!--          <li class="navbar-item has-dropdown is-hoverable">-->
+<!--            <a href="/categories/m/teen-young-adult">YA</a>-->
+<!--            -->
+<!--          </li>-->
+<!--          -->
+<!--          <li class="navbar-item has-dropdown is-hoverable">-->
+<!--            <a href="/categories/m/children-s-books">Kids</a>-->
+<!--            -->
+<!--          </li>-->
+<!--          -->
+<!--          <li class="navbar-item has-dropdown is-hoverable">-->
+<!--            <a href="/categories/m/gifts-games-puzzles">Games &amp; Puzzles</a>-->
+<!--            -->
+<!--          </li>-->
+<!--          -->
+<!--          <li class="navbar-item has-dropdown is-hoverable">-->
+<!--            <a href="/categories/m/fiction/spanish-language">En Español</a>-->
+<!--            -->
+<!--          </li>-->
+<!--          -->
+<!--        </ul>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="raised-banner">-->
+<!--      <a href="https://bookshop.org/pages/about">-->
+<!--        <span class="has-text-secondary is-bold is-size-l">$25,476,388.07</span>-->
+<!--        raised for local bookstores-->
+<!--      </a>-->
+<!--    </div>-->
+<!--  </div>-->
