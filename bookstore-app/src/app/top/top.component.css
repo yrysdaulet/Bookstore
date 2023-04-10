@@ -1,0 +1,51 @@
+.top {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  top:0;
+  left:0;
+  height: 85px;
+  border-bottom:1.5px solid #202020;
+}
+#logo {
+  margin-top: -35px;
+  width: 300px;
+}
+#login, #signup {
+  border: none;
+  border-radius: 5px;
+  background-color: #202020;
+  color: white;
+  padding: 10px 14px;
+  margin: 10px;
+  font-family:Rockwell Extra Bold;
+  font-size: 15px;
+}
+#login:hover, #signup:hover {
+  border: 2px solid #E3B58F;
+  border-radius: 5px;
+}
+.categories {
+  margin-top: auto;
+  margin-left: -970px;
+  margin-right: 260px;
+  margin-bottom: 5px;
+}
+.categories a{
+  /*text-align: center;*/
+  text-decoration: none;
+  color: #202020;
+  font-size: 20px;
+  margin-right: 50px;
+  margin-bottom: 5px;
+}
+.categories a:hover{
+  color: #E3B58F;
+}
+#login-box {
+  margin-left: auto;
+}
+.login {
+  margin: 7px;
+}

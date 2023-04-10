@@ -7,30 +7,28 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { BooksComponent } from './books/books.component';
+import { CategoriesComponent } from './categories/categories.component';
+import {AppRoutingModule} from "./app-routing.module";
+import { TopComponent } from './top/top.component';
+import { BottomComponent } from './bottom/bottom.component';
 // import { BookDetailsComponent } from './book-details/book-details.component';
 
-const appRoutes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'login', component: LoginComponent },
-  { path: 'books', component: BooksComponent }
-  // { path: 'books/:id', component: BookDetailsComponent }
-];
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
-    BooksComponent
+    BooksComponent,
+    CategoriesComponent,
+    TopComponent,
+    BottomComponent
     // BookDetailsComponent
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     HttpClientModule,
-    RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true }
-    )
   ],
   providers: [],
   bootstrap: [AppComponent]
