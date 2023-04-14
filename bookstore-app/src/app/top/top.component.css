@@ -5,40 +5,37 @@
   background-color: white;
   top:0;
   left:0;
-  height: 85px;
+  height: 12%;
   border-bottom:1.5px solid #202020;
 }
 #logo {
-  margin-top: -35px;
-  width: 300px;
+  margin-top: -12%;
+  width: 18rem;
 }
 #login, #signup {
   border: none;
   border-radius: 5px;
   background-color: #202020;
   color: white;
-  padding: 10px 14px;
-  margin: 10px;
+  padding: 0.7rem 1rem;
+  margin: 0.5rem;
   font-family:Rockwell Extra Bold;
-  font-size: 15px;
+  font-size: 1rem;
 }
 #login:hover, #signup:hover {
   border: 2px solid #E3B58F;
-  border-radius: 5px;
+  border-radius: 0.2rem;
 }
 .categories {
-  margin-top: auto;
-  margin-left: -970px;
-  margin-right: 260px;
-  margin-bottom: 5px;
+  margin: auto 20% 0.3rem -72%;
 }
 .categories a{
   /*text-align: center;*/
   text-decoration: none;
   color: #202020;
-  font-size: 20px;
-  margin-right: 50px;
-  margin-bottom: 5px;
+  font-size: 1.2rem;
+  margin-right: 3.2rem;
+  margin-bottom: 0.2rem;
 }
 .categories a:hover{
   color: #E3B58F;
@@ -47,5 +44,5 @@
   margin-left: auto;
 }
 .login {
-  margin: 7px;
+  margin: 0.4rem;
 }
