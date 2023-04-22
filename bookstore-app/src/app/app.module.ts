@@ -12,6 +12,7 @@ import {AppRoutingModule} from "./app-routing.module";
 import { TopComponent } from './top/top.component';
 import { BottomComponent } from './bottom/bottom.component';
 import { SignupComponent } from './signup/signup.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 // import { BookDetailsComponent } from './book-details/book-details.component';
 
 
@@ -24,7 +25,8 @@ import { SignupComponent } from './signup/signup.component';
     CategoriesComponent,
     TopComponent,
     BottomComponent,
-    SignupComponent
+    SignupComponent,
+    AboutUsComponent
     // BookDetailsComponent
   ],
   imports: [

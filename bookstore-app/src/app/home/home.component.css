@@ -43,3 +43,41 @@
   margin-left: 400px;
   margin-top: -520px;
 }
+#reviews-part {
+  display: flex;
+  margin-right: -360px;
+  margin-left: 20px;
+}
+#review {
+  margin-top: 250px;
+  margin-bottom: 50px;
+  font-family: "Rockwell Extra";
+  font-size: 30px;
+  text-align: center;
+  margin-right: -330px;
+}
+
+.reviews {
+  width: 280px;
+  height: 300px;
+  padding: 40px;
+  font-size: 18px;
+  border: 14px solid #202020;
+  margin-right: 50px;
+  text-align: center;
+  box-shadow: 6px 4px 6px rgba(0, 0, 0, 0.5);
+}
+.round-image {
+  border-radius: 50%;
+  width: 70px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+.authors {
+  font-family: "Rockwell Extra";
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.line {
+  border-bottom: 1px solid #202020;
+}
