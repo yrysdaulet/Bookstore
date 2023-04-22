@@ -23,6 +23,37 @@ class TaskViewSet(viewsets.ModelViewSet):
     serializer_class = TaskSerializer
 
 
+class BookListByGenre(generics.ListAPIView):
+    serializer_class = BookSerializer
+
+    def get_queryset(self):
+        genre_id = self.kwargs['genre_id']
+        return Book.objects.filter(genre__id=genre_id)
+
+class BookDetailByGenre(generics.RetrieveAPIView):
+    serializer_class = BookSerializer
+
+    def get_object(self):
+        genre_id = self.kwargs['genre_id']
+        book_id = self.kwargs['book_id']
+        return get_object_or_404(Book, id=book_id, genre__id=genre_id)
+
+class BookListByAuthor(generics.ListAPIView):
+    serializer_class = BookSerializer
+
+    def get_queryset(self):
+        author_id = self.kwargs['author_id']
+        return Book.objects.filter(author__id=author_id)
+
+class BookDetailByAuthor(generics.RetrieveAPIView):
+    serializer_class = BookSerializer
+
+    def get_object(self):
+        author_id = self.kwargs['author_id']
+        book_id = self.kwargs['book_id']
+        return get_object_or_404(Book, id=book_id, author__id=author_id)
+
+
 #Using FBV  
 # @api_view(['GET', 'POST'])
 # def Book_list_by_genre(request, genre_id):
