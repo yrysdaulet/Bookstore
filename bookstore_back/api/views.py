@@ -70,33 +70,28 @@ class BookDetailByAuthor(generics.RetrieveAPIView):
 
 @api_view(['GET'])
 def book_list_by_user(request, user_id):
-    """
-    List all books in a user's library.
-    """
     user = get_object_or_404(User, pk=user_id)
     books = Book.objects.filter(library__user=user)
     serializer = BookSerializer(books, many=True)
     return Response(serializer.data)
 
-
-@api_view(['GET', 'PUT', 'DELETE'])
+@api_view(['GET', 'POST', 'DELETE'])
 def book_detail_by_user(request, user_id, book_id):
-    """
-    Retrieve, update or delete a book in a user's library.
-    """
     user = get_object_or_404(User, pk=user_id)
-    book = get_object_or_404(Book, pk=book_id, library__user=user)
 
     if request.method == 'GET':
+        book = get_object_or_404(Book, pk=book_id, library__user=user)
         serializer = BookSerializer(book)
         return Response(serializer.data)
 
     elif request.method == 'POST':
-        library = Library.objects.create(user=user, book=book)
+        book = get_object_or_404(Book, pk=book_id)
+        library = Library(user=user, book=book)
+        library.save()
         serializer = LibrarySerializer(library)
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
     elif request.method == 'DELETE':
-        library = get_object_or_404(Library, user=user, book=book)
-        library.delete()
+        book = get_object_or_404(Book, pk=book_id, library__user=user)
+        book.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
