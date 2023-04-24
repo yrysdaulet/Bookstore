@@ -18,6 +18,10 @@ urlpatterns = [
    
     path('genres/<int:genre_id>/books/', BookListByGenre.as_view()),
     path('genres/<int:genre_id>/books/<int:book_id>/', BookDetailByGenre.as_view()),
+    
     path('authors/<int:author_id>/books/', BookListByAuthor.as_view()),
     path('authors/<int:author_id>/books/<int:book_id>/', BookDetailByAuthor.as_view()),
+
+    path('library/<int:user_id>/books/', book_list_by_user),
+    path('library/<int:user_id>/books/<int:book_id>/', book_detail_by_user),
 ]

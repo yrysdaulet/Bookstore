@@ -14,32 +14,24 @@ class GenreSerializer(serializers.ModelSerializer):
     class Meta:
         model = Genre
         fields = '__all__'
-        
+
 class BookSerializer(serializers.ModelSerializer):
     author = AuthorSerializer()
-    genre = GenreSerializer()    
+    genres = GenreSerializer(many=True)
     class Meta:
         model = Book
         fields = '__all__'
-
-
-# class BookGenreSerializer(serializers.ModelSerializer):
-#     book = BookSerializer()
-#     genre = GenreSerializer()
-    
-#     class Meta:
-#         model = BookGenre
-#         fields = '__all__'
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = '__all__'
 
-# class LibrarySerializer(serializers.ModelSerializer):
-#     user = UserSerializer()
-#     book = BookSerializer()
+
+class LibrarySerializer(serializers.ModelSerializer):
+    user = UserSerializer()
+    book = BookSerializer()
     
-#     class Meta:
-#         model = Library
-#         fields = '__all__'
+    class Meta:
+        model = Library
+        fields = '__all__'

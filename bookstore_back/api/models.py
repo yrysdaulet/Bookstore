@@ -3,24 +3,24 @@ from django.contrib.auth.models import AbstractUser, Group,Permission
 
 class Author(models.Model):
     name = models.CharField(max_length=255)
-
+    def __str__(self):
+        return self.name
 class Genre(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField()
+    def __str__(self):
+        return self.name
 
 class Book(models.Model):
     title = models.CharField(max_length=255)
     author = models.ForeignKey(Author, on_delete=models.CASCADE)
     description = models.TextField()
     image = models.URLField()
-    genre = models.ForeignKey(Genre, on_delete=models.CASCADE)
+    genres = models.ManyToManyField(Genre)
     rating_count = models.IntegerField(default=0)
     rating_value = models.DecimalField(max_digits=5, decimal_places=2,default=0.0)
-
-class BookGenre(models.Model):
-    book = models.ForeignKey(Book, on_delete=models.CASCADE)
-    genre = models.ForeignKey(Genre, on_delete=models.CASCADE)
-
+    def __str__(self):
+        return self.title
 class User(AbstractUser):
     groups = models.ManyToManyField(Group, related_name='api_users')
     user_permissions = models.ManyToManyField(Permission, related_name='api_users')
