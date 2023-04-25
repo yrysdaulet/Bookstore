@@ -1,37 +1,12 @@
-import {Component, OnInit} from '@angular/core';
-import { OwlOptions} from "ngx-owl-carousel-o";
+import {Component, Input} from '@angular/core';
+
 
 @Component({
-  selector: 'app-categories',
-  templateUrl: './categories.component.html',
-  styleUrls: ['./categories.component.css']
+  selector: 'app-category-detail',
+  templateUrl: './category-detail.component.html',
+  styleUrls: ['./category-detail.component.css']
 })
-export class CategoriesComponent{
-  customOptions: OwlOptions = {
-    margin: 20,
-    loop: true,
-    mouseDrag: true,
-    touchDrag: true,
-    pullDrag: false,
-    dots: false,
-    navSpeed: 700,
-    navText: ['<i class="fa fa-caret-left" ></i>', '<i class="fa fa-caret-right"></i>'],
-    responsive: {
-      0: {
-        items: 1
-      },
-      400: {
-        items: 2
-      },
-      740: {
-        items: 3
-      },
-      940: {
-        items: 4
-      }
-    },
-    nav: true
-  }
+export class CategoryDetailComponent {
   categories = [
     {
       id: 1,
@@ -61,6 +36,5 @@ export class CategoriesComponent{
       description: "Psychology books are a genre of non-fiction that explore various aspects of human behavior, emotion, and mental processes. These books can cover a wide range of topics, from general psychology to more specific subfields such as developmental psychology, social psychology, clinical psychology, and cognitive psychology. The genre often includes theories, research findings, case studies, and practical advice on how to understand and address psychological issues. Psychology books can provide insight into human nature and help readers better understand themselves and those around them. They are often written in an accessible style and can be of interest to both professionals in the field and general readers.",
       books: "assets/images/yrysdaulet.png"
     },
-
   ]
 }

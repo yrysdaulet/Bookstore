@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselModule} from "ngx-owl-carousel-o";
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -13,6 +15,7 @@ import { TopComponent } from './top/top.component';
 import { BottomComponent } from './bottom/bottom.component';
 import { SignupComponent } from './signup/signup.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { CategoryDetailComponent } from './category-detail/category-detail.component';
 // import { BookDetailsComponent } from './book-details/book-details.component';
 
 
@@ -26,13 +29,16 @@ import { AboutUsComponent } from './about-us/about-us.component';
     TopComponent,
     BottomComponent,
     SignupComponent,
-    AboutUsComponent
-    // BookDetailsComponent
+    AboutUsComponent,
+    CategoryDetailComponent,
+    // BookDetailsComponent,
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

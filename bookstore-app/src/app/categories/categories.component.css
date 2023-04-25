@@ -1,0 +1,33 @@
+#mid {
+  margin-top: 50px;
+  padding: 40px;
+}
+#mid h1 {
+  text-align: center;
+  font-size: 28px;
+}
+#mid a {
+  text-decoration: none;
+}
+#mid h2 {
+  background-color: #202020;
+  color: white;
+  padding: 5px 5px 5px 15px;
+  border-radius: 3px;
+  font-weight: lighter;
+}
+#mid h2:hover {
+  background-color: #333333;
+}
+.swiper {
+  width: 90%;
+  margin: 0 auto;
+}
+.swiper img {
+  margin-right: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.swiper img:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  margin:3px;
+}

@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+.swiper .owl-next, .swiper .owl-prev {
+  background: rgba(221, 212, 212, 0.78)!important;
+  color:#222!important;
+  height: 30px!important;
+  width: 30px!important;
+  border-radius: 50%!important;
+  position: absolute;
+  top: 40%;
+  transition: .3s all ease;
+}
+.swiper .owl-next {
+  right: 0;
+}
+.swiper .owl-prev {
+  left: 0;
+}
+.swiper .owl-next i, .swiper .owl-prev i {
+  font-size: 20px;
+  color: #202020;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.swiper .owl-next:hover, .swiper .owl-prev:hover {
+  background: #202020!important;
+  color: white!important;
+}
+
