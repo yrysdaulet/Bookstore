@@ -17,18 +17,21 @@ class GenreSerializer(serializers.ModelSerializer):
 
 class BookSerializer(serializers.ModelSerializer):
     author = AuthorSerializer()
-    genres = serializers.SlugRelatedField(
-        many=True,
-        queryset=Genre.objects.all(),
-        slug_field='name'
-    )
+    genres = GenreSerializer(many=True)
     
     def create(self, validated_data):
         author_data = validated_data.pop('author')
-        author_name = author_data.pop('name')
-        author, created = Author.objects.get_or_create(name=author_name, defaults=author_data)
+        author = Author.objects.create(**author_data)
         genres_data = validated_data.pop('genres')
-        genres = [Genre.objects.get_or_create(name=genre_name)[0] for genre_name in genres_data]
+        genres = []
+        for genre_data in genres_data:
+            name = genre_data.pop('name')
+            try:
+                genre = Genre.objects.get(name=name)
+                # If the genre already exists, ignore the description from the data
+            except Genre.DoesNotExist:
+                genre = Genre.objects.create(name=name, **genre_data)
+            genres.append(genre)
         book = Book.objects.create(author=author, **validated_data)
         book.genres.set(genres)
         return book
