@@ -17,10 +17,25 @@ class GenreSerializer(serializers.ModelSerializer):
 
 class BookSerializer(serializers.ModelSerializer):
     author = AuthorSerializer()
-    genres = GenreSerializer(many=True)
+    genres = serializers.SlugRelatedField(
+        many=True,
+        queryset=Genre.objects.all(),
+        slug_field='name'
+    )
+    
+    def create(self, validated_data):
+        author_data = validated_data.pop('author')
+        author_name = author_data.pop('name')
+        author, created = Author.objects.get_or_create(name=author_name, defaults=author_data)
+        genres_data = validated_data.pop('genres')
+        genres = [Genre.objects.get_or_create(name=genre_name)[0] for genre_name in genres_data]
+        book = Book.objects.create(author=author, **validated_data)
+        book.genres.set(genres)
+        return book
     class Meta:
         model = Book
         fields = '__all__'
+    
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
