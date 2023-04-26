@@ -17,8 +17,11 @@ class Book(models.Model):
     description = models.TextField()
     image = models.URLField()
     genres = models.ManyToManyField(Genre)
+    year_of_publication = models.IntegerField(default=0)
+    num_of_pages = models.IntegerField(default=0)
     rating_count = models.IntegerField(default=0)
     rating_value = models.DecimalField(max_digits=5, decimal_places=2,default=0.0)
+
     def __str__(self):
         return self.title
 class User(AbstractUser):

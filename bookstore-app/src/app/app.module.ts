@@ -16,6 +16,7 @@ import { BottomComponent } from './bottom/bottom.component';
 import { SignupComponent } from './signup/signup.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { CategoryDetailComponent } from './category-detail/category-detail.component';
+import { BookDetailComponent } from './book-detail/book-detail.component';
 // import { BookDetailsComponent } from './book-details/book-details.component';
 
 
@@ -31,6 +32,7 @@ import { CategoryDetailComponent } from './category-detail/category-detail.compo
     SignupComponent,
     AboutUsComponent,
     CategoryDetailComponent,
+    BookDetailComponent,
     // BookDetailsComponent,
   ],
   imports: [

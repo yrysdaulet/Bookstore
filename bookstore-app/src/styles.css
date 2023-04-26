@@ -1,12 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family: "Rockwell Extra";
+
+}
 .swiper .owl-next, .swiper .owl-prev {
   background: rgba(221, 212, 212, 0.78)!important;
   color:#222!important;
   height: 30px!important;
   width: 30px!important;
   border-radius: 50%!important;
-  position: absolute;
-  top: 40%;
+  position: relative;
   transition: .3s all ease;
 }
 .swiper .owl-next {

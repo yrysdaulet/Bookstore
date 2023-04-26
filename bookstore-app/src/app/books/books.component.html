@@ -1,1 +1,9 @@
-<p>books works!</p>
+<app-top></app-top>
+<div id="mid">
+  <div *ngFor="let book of books">
+    <a routerLink="/books/{{book.id}}"><img src="{{book.image}}"></a>
+    <h3 routerLink="/books/{{book.id}}">{{book.title}}</h3>
+    <h3 routerLink="/books/{{book.id}}">{{book.author.name}}</h3>
+  </div>
+</div>
+<app-bottom></app-bottom>

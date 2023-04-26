@@ -1,3 +1,72 @@
+
 #mid {
-  margin-top: 100px;
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 40px;
 }
+#category {
+  border: 15px solid #202020;
+  padding: 15px;
+  margin-bottom: 40px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+#category h1{
+  text-transform: uppercase;
+}
+#category h2{
+  color: #202020;
+}
+#line {
+  border-top: 1px solid #202020;
+}
+
+/* Style the headings */
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  color: #666;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Style the book container */
+.book-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Style each book item */
+.book-item {
+  width: 15%;
+  margin-bottom: 40px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.book-item:hover {
+  transform: translateY(-5px);
+}
+
+.book-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.book-item p {
+  font-size: 16px;
+  color: #333;
+  margin: 10px;
+  text-align: center;
+}
+

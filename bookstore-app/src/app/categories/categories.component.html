@@ -2,16 +2,12 @@
 <div id="mid">
   <h1>Genres</h1>
   <div *ngFor="let category of categories">
-    <a routerLink="/category-detail/{{category.id}}"><h2>{{category.name}}</h2></a>
+    <a routerLink="/categories/{{category.id}}"><h2>{{category.name}}</h2></a>
     <div class="swiper">
       <owl-carousel-o [options]="customOptions">
-        <ng-template carouselSlide><img src={{category.books}}></ng-template>
-        <ng-template carouselSlide><img src={{category.books}}></ng-template>
-        <ng-template carouselSlide><img src={{category.books}}></ng-template>
-        <ng-template carouselSlide><img src={{category.books}}></ng-template>
-        <ng-template carouselSlide><img src={{category.books}}></ng-template>
-        <ng-template carouselSlide><img src={{category.books}}></ng-template>
-        <ng-template carouselSlide><img src={{category.books}}></ng-template>
+          <ng-template *ngFor="let book of books" carouselSlide>
+            <a routerLink="/books/{{book.id}}"><img style="width:200px; height: 300px" src="{{book.image}}" *ngIf="genreContains(book.genres, category)"></a>
+          </ng-template>
       </owl-carousel-o>
     </div>
   </div>

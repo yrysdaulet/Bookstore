@@ -1,0 +1,14 @@
+{
+  "name": "color-thief",
+  "homepage": "https://github.com/lokesh/color-thief",
+  "version": "2.4.0",
+  "_release": "2.4.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.4.0",
+    "commit": "4dc3bb0b43250f0d006278998aa91c4156f77cc3"
+  },
+  "_source": "https://github.com/lokesh/color-thief.git",
+  "_target": "*",
+  "_originalSource": "color-thief"
+}

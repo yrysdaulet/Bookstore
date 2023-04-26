@@ -1,0 +1,19 @@
+<app-top></app-top>
+<div id="mid">
+  <div id="left">
+    <img id="book-image" src="{{book.image}}">
+  </div>
+  <div id="right">
+    <h1>{{book.title}}</h1>
+    <h3>{{book.author.name}}</h3>
+    <h3>Year of publication: {{book.year_of_publication}}</h3>
+    <h3>Number of pages: {{book.num_of_pages}}</h3>
+    <p>{{book.description}}</p>
+    <div id="buttons">
+      <button>Read</button>
+      <button>Buy</button>
+    </div>
+  </div>
+</div>
+
+<app-bottom></app-bottom>
