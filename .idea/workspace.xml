@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa10db63-0ff4-4218-a112-211b6cb193fe" name="Changes" comment="" />
+    <list default="true" id="aa10db63-0ff4-4218-a112-211b6cb193fe" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/bookstore_back/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore_back/api/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore_back/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore_back/db.sqlite3" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,11 +36,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Айжан/Desktop/Bookstore/bookstore_back/db.sqlite3",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "aDefault",
+    "two.files.diff.last.used.file": "C:/Users/Айжан/Desktop/Bookstore/bookstore_back/db.sqlite3",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -60,6 +66,7 @@
       <workItem from="1682415632302" duration="8609000" />
       <workItem from="1682481830774" duration="4739000" />
       <workItem from="1682512061750" duration="605000" />
+      <workItem from="1682527496009" duration="372000" />
     </task>
     <servers />
   </component>
