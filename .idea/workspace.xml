@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa10db63-0ff4-4218-a112-211b6cb193fe" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/bookstore_back/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore_back/api/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore_back/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore_back/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore-app/src/app/categories/categories.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore-app/src/app/categories/categories.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore-app/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore-app/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,16 +36,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Айжан/Desktop/Bookstore/bookstore_back/db.sqlite3",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "aDefault",
-    "two.files.diff.last.used.file": "C:/Users/Айжан/Desktop/Bookstore/bookstore_back/db.sqlite3",
-    "vue.rearranger.settings.migration": "true"
+    "ts.external.directory.path": "C:\\Users\\Айжан\\Desktop\\Bookstore\\bookstore-app\\node_modules\\typescript\\lib"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -72,5 +65,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

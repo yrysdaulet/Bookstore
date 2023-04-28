@@ -12,7 +12,6 @@ import {BookService} from "../book.service";
 })
 export class CategoriesComponent implements OnInit{
   customOptions: OwlOptions = {
-    margin: 0,
     loop: true,
     mouseDrag: true,
     touchDrag: true,
