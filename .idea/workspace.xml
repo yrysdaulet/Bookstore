@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa10db63-0ff4-4218-a112-211b6cb193fe" name="Changes" comment="hajshda">
-      <change beforePath="$PROJECT_DIR$/bookstore_back/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore_back/api/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore_back/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore_back/api/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore-app/src/app/categories/categories.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore-app/src/app/categories/categories.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore-app/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore-app/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,12 +34,6 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "node.js.selected.package.tslint": "(autodetect)",
-    "ts.external.directory.path": "C:\\Users\\Айжан\\Desktop\\Bookstore\\bookstore-app\\node_modules\\typescript\\lib"
-  }
-}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -60,32 +55,9 @@
       <workItem from="1682512061750" duration="605000" />
       <workItem from="1682527496009" duration="372000" />
     </task>
-    <task id="LOCAL-00001" summary="hajshda">
-      <created>1682673284857</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1682673284857</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="hajshda" />
-    <option name="LAST_COMMIT_MESSAGE" value="hajshda" />
   </component>
 </project>
