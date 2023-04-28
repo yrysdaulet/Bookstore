@@ -11,6 +11,7 @@ from .serializers import *
 class BookViewSet(viewsets.ModelViewSet):  # need to rewrite funcs
     queryset = Book.objects.all()
     serializer_class = BookSerializer
+    
 
 
 class GenreViewSet(viewsets.ModelViewSet):
