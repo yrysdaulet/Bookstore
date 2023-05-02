@@ -36,32 +36,17 @@ export class CategoriesComponent implements OnInit{
     },
     nav: true
   }
-  categories: Genre[] = [];
-  books: Book[] = [];
+  genres: Genre[] = [];
   constructor(private categoryService: CategoryService, private route: ActivatedRoute, private bookService: BookService) {
   }
   ngOnInit() {
-    this.getCategories();
-    this.getBooks();
-  }
-  getCategories(){
-    this.categoryService.getCategories().subscribe((genres)=>{
-      this.categories = genres;
-    })
-  }
-  getBooks(){
-      return this.bookService.getBooks().subscribe((books)=>{
-        this.books = books;
-        console.log(this.books)
-      })
-  }
-  genreContains(genres: Genre[], genre: Genre){
-    for(let g of genres){
-      if(g.id == genre.id){
-        return true;
-      }
+    this.getGenresWithBooks();
     }
-    return false;
+    
+    getGenresWithBooks(){
+    this.categoryService.getGenresWithBooks().subscribe((genres: Genre[]) => {
+      this.genres = genres;
+      });
   }
 
 }

@@ -2,6 +2,7 @@ export interface Genre {
   id: number;
   name: string;
   description: string;
+  books?: Book[];
 }
 export interface Author {
   id:number;
@@ -18,4 +19,5 @@ export interface Book {
   num_of_pages:number;
   rating_count: number;
   rating_value: number;
+  
 }

@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {Observable} from "rxjs";
+import {Observable, forkJoin} from "rxjs";
 import {Book, Genre} from "./models";
+import { map, switchMap } from 'rxjs/operators';
+
 
 @Injectable({
   providedIn: 'root'
@@ -18,4 +20,19 @@ export class CategoryService {
   getBooks(id:number):Observable<Book[]>{
     return this.client.get<Book[]>(`${this.BASE_URL}/genres/${id}/books`)
   }
+  
+  getGenresWithBooks(): Observable<Genre[]> {
+    return this.client.get<Genre[]>(`${this.BASE_URL}/genres`).pipe(
+      switchMap((genres: Genre[]) =>
+        forkJoin(
+          genres.map((genre: Genre) =>
+            this.client.get<Book[]>(`${this.BASE_URL}/genres/${genre.id}/books`).pipe(
+              map((books: Book[]) => ({ ...genre, books }))
+            )
+          )
+        )
+      )
+    );
+  }
+
 }
