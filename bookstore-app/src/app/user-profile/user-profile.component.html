@@ -1,0 +1,42 @@
+<app-top></app-top>
+<div id="mid">
+  <div id="left">
+    <h2>User Profile</h2>
+    <ul>
+      <li>
+        <i class="fa fa-user"></i>
+        <a (click)="onUserInfo()" > User info</a>
+      </li>
+      <li>
+        <i class="fa-sharp fa fa-heart"></i>
+        <a (click)="onFavourite()" >  Favourites</a>
+      </li>
+      <li>
+        <i class="fa fa-book"></i>
+        <a (click)="onLibrary()"> My Library</a>
+      </li>
+    </ul>
+    <button>Log out</button>
+  </div>
+  <div class="right" *ngIf="userInfo">
+    <h2>Name Surname</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      <label for="surname">Surname:</label>
+      <input type="text" id="surname" required>
+      <label for="email">Email:</label>
+      <input type="text" id="email" required>
+      <label for="phone-number">Phone number:</label>
+      <input type="text" id="phone-number" required>
+    </form>
+    <button>Save Changes</button>
+  </div>
+  <div class="right" *ngIf="favourite">
+    favourite works
+  </div>
+  <div class="right" *ngIf="library">
+    library works
+  </div>
+</div>
+<app-bottom></app-bottom>

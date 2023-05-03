@@ -2,8 +2,8 @@
 <div id="mid" *ngIf="loaded">
   <div id="back-img"></div>
   <div *ngFor="let author of authors">
-      <div id="author-back">
-        <a routerLink="/authors/">{{author.name}}</a>
+      <div routerLink="/authors/{{author.id}}" id="author-back">
+        <a routerLink="/authors/{{author.id}}">{{author.name}}</a>
       </div>
   </div>
 </div>

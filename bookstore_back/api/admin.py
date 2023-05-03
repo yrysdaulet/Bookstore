@@ -6,7 +6,6 @@ class AuthorAdmin(admin.ModelAdmin):
     list_display = ('id','name')
 class GenreAdmin(admin.ModelAdmin):
     list_display = ('id','name', 'description')
-
 class LibraryAdmin(admin.ModelAdmin):
     list_display = ('user', 'book')
 # class UserAdmin(admin.ModelAdmin):

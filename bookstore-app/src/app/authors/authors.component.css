@@ -1,6 +1,7 @@
 #mid {
   margin-top: 120px;
   margin-bottom: 40px;
+  margin-left: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
@@ -19,7 +20,7 @@
 }
 
 #author-back {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.16);
   width: 400px;
   height: 60px;
   border: 1px solid white;
@@ -40,5 +41,6 @@ a {
   font-family: "Rockwell Extra";
   font-size: 24px;
 }
+
 
 

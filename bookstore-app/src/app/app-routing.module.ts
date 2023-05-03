@@ -9,6 +9,8 @@ import {AboutUsComponent} from "./about-us/about-us.component";
 import {CategoryDetailComponent} from "./category-detail/category-detail.component";
 import {BookDetailComponent} from "./book-detail/book-detail.component";
 import {AuthorsComponent} from "./authors/authors.component";
+import {AuthorDetailComponent} from "./author-detail/author-detail.component";
+import {UserProfileComponent} from "./user-profile/user-profile.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -20,7 +22,8 @@ const routes: Routes = [
   { path: 'signup', component: SignupComponent},
   { path: 'about-us', component: AboutUsComponent},
   { path: 'authors', component: AuthorsComponent},
-  { path: 'authors/:id', component: AuthorsComponent}
+  { path: 'authors/:id', component: AuthorDetailComponent},
+  { path: 'user-profile', component: UserProfileComponent}
 
 ];
 

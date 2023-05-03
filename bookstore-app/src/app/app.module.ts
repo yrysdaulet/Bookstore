@@ -19,6 +19,7 @@ import { CategoryDetailComponent } from './category-detail/category-detail.compo
 import { BookDetailComponent } from './book-detail/book-detail.component';
 import { AuthorsComponent } from './authors/authors.component';
 import { AuthorDetailComponent } from './author-detail/author-detail.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 // import { BookDetailsComponent } from './book-details/book-details.component';
 
 
@@ -37,6 +38,7 @@ import { AuthorDetailComponent } from './author-detail/author-detail.component';
     BookDetailComponent,
     AuthorsComponent,
     AuthorDetailComponent,
+    UserProfileComponent,
     // BookDetailsComponent,
   ],
   imports: [

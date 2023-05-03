@@ -8,7 +8,7 @@ urlpatterns = [
     path('books/<int:pk>/', BookViewSet.as_view({'get':'retrieve', 'put':'update', 'patch':'partial_update', 'delete':'destroy'})),
     
     path('authors/', AuthorViewSet.as_view({'get':'list', 'post':'create',})),
-    path('author/<int:pk>/', AuthorViewSet.as_view({'get':'retrieve', 'put':'update', 'patch':'partial_update', 'delete':'destroy'})),
+    path('authors/<int:pk>/', AuthorViewSet.as_view({'get':'retrieve', 'put':'update', 'patch':'partial_update', 'delete':'destroy'})),
    
     path('tasks/', TaskViewSet.as_view({'get':'list', 'post':'create',})),
     path('tasks/<int:pk>/', TaskViewSet.as_view({'get':'retrieve', 'put':'update', 'patch':'partial_update', 'delete':'destroy'})),

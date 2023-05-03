@@ -1,1 +1,18 @@
-<p>author-detail works!</p>
+<app-top></app-top>
+<div id="mid">
+  <div id="back-img"></div>
+  <div id="name">
+    <div id="author-back">
+      <a>{{author.name}}</a>
+    </div>
+  </div>
+  <div id="books">
+    <div *ngFor="let book of books">
+      <div id="book-back" routerLink="/books/{{book.id}}">
+        <a routerLink="/books/{{book.id}}"><img style="width: 150px; height: 220px" src="{{book.image}}"></a>
+        <a routerLink="/books/{{book.id}}">{{book.title}}</a>
+      </div>
+    </div>
+  </div>
+</div>
+<app-bottom></app-bottom>

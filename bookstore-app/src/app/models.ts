@@ -5,6 +5,7 @@ export interface Genre {
   books?: Book[];
 }
 export interface Author {
+  id:number;
   name:string;
 }
 export interface Book {

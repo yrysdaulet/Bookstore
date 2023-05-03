@@ -3,10 +3,12 @@ from .models import *
 
 #serializers.Serializer
 class TaskSerializer(serializers.Serializer):
+    id = serializers.IntegerField(read_only=True)
     image = serializers.URLField()
     answer = serializers.CharField(max_length=1)
 
 class AuthorSerializer(serializers.Serializer):
+    id = serializers.IntegerField(read_only=True)
     name = serializers.CharField(max_length=255)
 #serializers.ModelSerializer
 
