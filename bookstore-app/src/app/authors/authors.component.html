@@ -1,0 +1,10 @@
+<app-top></app-top>
+<div id="mid" *ngIf="loaded">
+  <div id="back-img"></div>
+  <div *ngFor="let author of authors">
+      <div id="author-back">
+        <a routerLink="/authors/">{{author.name}}</a>
+      </div>
+  </div>
+</div>
+<app-bottom></app-bottom>

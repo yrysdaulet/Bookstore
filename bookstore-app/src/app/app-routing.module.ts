@@ -8,6 +8,7 @@ import {SignupComponent} from "./signup/signup.component";
 import {AboutUsComponent} from "./about-us/about-us.component";
 import {CategoryDetailComponent} from "./category-detail/category-detail.component";
 import {BookDetailComponent} from "./book-detail/book-detail.component";
+import {AuthorsComponent} from "./authors/authors.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -18,6 +19,8 @@ const routes: Routes = [
   { path: 'categories/:id', component:CategoryDetailComponent},
   { path: 'signup', component: SignupComponent},
   { path: 'about-us', component: AboutUsComponent},
+  { path: 'authors', component: AuthorsComponent},
+  { path: 'authors/:id', component: AuthorsComponent}
 
 ];
 

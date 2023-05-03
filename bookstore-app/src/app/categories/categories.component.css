@@ -30,7 +30,7 @@
 
 .swiper a, ng-template {
   display: inline-block;
-  
+
 }
 owl-stage {
   display: flex;
@@ -38,14 +38,14 @@ owl-stage {
   z-index: 1;
 }
 owl-item {
-  max-width: 25%;
+  /*max-width: 25%;*/
 }
 
 
 .swiper {
-  
+
   width: 90%;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
 }
 .swiper img {
   margin-right: 10px;
@@ -54,7 +54,7 @@ owl-item {
 .swiper img:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   margin:3px;
-  width: 200px; 
+  width: 200px;
   height: 300px;
 }
 

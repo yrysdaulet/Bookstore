@@ -17,6 +17,8 @@ import { SignupComponent } from './signup/signup.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { CategoryDetailComponent } from './category-detail/category-detail.component';
 import { BookDetailComponent } from './book-detail/book-detail.component';
+import { AuthorsComponent } from './authors/authors.component';
+import { AuthorDetailComponent } from './author-detail/author-detail.component';
 // import { BookDetailsComponent } from './book-details/book-details.component';
 
 
@@ -33,6 +35,8 @@ import { BookDetailComponent } from './book-detail/book-detail.component';
     AboutUsComponent,
     CategoryDetailComponent,
     BookDetailComponent,
+    AuthorsComponent,
+    AuthorDetailComponent,
     // BookDetailsComponent,
   ],
   imports: [

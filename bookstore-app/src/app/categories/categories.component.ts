@@ -13,7 +13,7 @@ import {BookService} from "../book.service";
 export class CategoriesComponent implements OnInit{
   customOptions: OwlOptions = {
     margin: 0,
-    loop: true,
+    loop: false,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: false,
@@ -22,31 +22,24 @@ export class CategoriesComponent implements OnInit{
     navText: ['<i class="fa fa-caret-left" ></i>', '<i class="fa fa-caret-right"></i>'],
     responsive: {
       0: {
-        items: 1
+        items: 5
       },
-      400: {
-        items: 2
-      },
-      740: {
-        items: 3
-      },
-      940: {
-        items: 4
-      }
     },
     nav: true
   }
   genres: Genre[] = [];
+  loaded: boolean = false;
   constructor(private categoryService: CategoryService, private route: ActivatedRoute, private bookService: BookService) {
   }
   ngOnInit() {
     this.getGenresWithBooks();
     }
-    
-    getGenresWithBooks(){
+
+  getGenresWithBooks(){
     this.categoryService.getGenresWithBooks().subscribe((genres: Genre[]) => {
       this.genres = genres;
-      });
+      this.loaded = true
+    });
   }
 
 }
