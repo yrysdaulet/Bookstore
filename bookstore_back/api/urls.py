@@ -6,6 +6,7 @@ from .views import *
 urlpatterns = [
     path('books/', BookViewSet.as_view({'get':'list', 'post':'create',})),
     path('books/<int:pk>/', BookViewSet.as_view({'get':'retrieve', 'put':'update', 'patch':'partial_update', 'delete':'destroy'})),
+    path('books/<int:id>/rate/', rate_book),
     
     path('authors/', AuthorViewSet.as_view({'get':'list', 'post':'create',})),
     path('authors/<int:pk>/', AuthorViewSet.as_view({'get':'retrieve', 'put':'update', 'patch':'partial_update', 'delete':'destroy'})),
@@ -21,12 +22,12 @@ urlpatterns = [
     
     path('authors/<int:author_id>/books/', BookListByAuthor.as_view()),
     path('authors/<int:author_id>/books/<int:book_id>/', BookDetailByAuthor.as_view()),
+    #
+    # path('library/<int:user_id>/books/', book_list_by_user),
+    # path('library/<int:user_id>/books/<int:book_id>/', book_detail_by_user),
 
-    path('library/<int:user_id>/books/', book_list_by_user),
-    path('library/<int:user_id>/books/<int:book_id>/', book_detail_by_user),
-
-    path('register/', RegisterView.as_view()),
-    path('login/', LoginView.as_view()),
-    path('logout/', LogoutView.as_view()),
-    path('user/', UserView.as_view()),
+    # path('register/', RegisterView.as_view()),
+    # path('login/', LoginView.as_view()),
+    # path('logout/', LogoutView.as_view()),
+    # path('user/', UserView.as_view()),
 ]

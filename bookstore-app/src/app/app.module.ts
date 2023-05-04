@@ -20,6 +20,7 @@ import { BookDetailComponent } from './book-detail/book-detail.component';
 import { AuthorsComponent } from './authors/authors.component';
 import { AuthorDetailComponent } from './author-detail/author-detail.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import {FormsModule} from "@angular/forms";
 // import { BookDetailsComponent } from './book-details/book-details.component';
 
 
@@ -46,7 +47,8 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
     BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
-    CarouselModule
+    CarouselModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

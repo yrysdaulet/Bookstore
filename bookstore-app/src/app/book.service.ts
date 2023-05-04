@@ -17,4 +17,9 @@ export class BookService{
   getBook(id:number):Observable<Book>{
     return this.client.get<Book>(`${this.BASE_URL}/books/${id}`)
   }
+  rateBook(bookId: number, rating: number): Observable<{ book: Book }> {
+    const url = `${this.BASE_URL}/books/${bookId}/rate/`;
+    const body = { rating };
+    return this.client.post<{ book: Book }>(url, body);
+  }
 }

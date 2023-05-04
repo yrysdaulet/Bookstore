@@ -25,6 +25,11 @@ class Book(models.Model):
 
     def __str__(self):
         return self.title
+
+    def add_rating(self, rating):
+        self.rating_count += 1
+        self.rating_value += rating
+        self.save()
 class User(AbstractUser):
     groups = models.ManyToManyField(Group, related_name='api_users')
     user_permissions = None
