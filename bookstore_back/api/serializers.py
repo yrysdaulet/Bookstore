@@ -50,7 +50,8 @@ class BookSerializer(serializers.ModelSerializer):
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = '__all__'
+        # fields = '__all__'
+        fields = ['id', 'username','email', 'password','groups', 'first_name', 'last_name']
 
 
 class LibrarySerializer(serializers.ModelSerializer):

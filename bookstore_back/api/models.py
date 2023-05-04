@@ -27,14 +27,10 @@ class Book(models.Model):
         return self.title
 class User(AbstractUser):
     groups = models.ManyToManyField(Group, related_name='api_users')
-    user_permissions = models.ManyToManyField(Permission, related_name='api_users')
-    role_choices = [
-        ('admin', 'Admin'),
-        ('client', 'Client')
-    ]
-    role = models.CharField(max_length=50, choices=role_choices)
-
-
+    user_permissions = None
+    first_name = models.CharField(("first name"), max_length=150)
+    last_name = models.CharField(("last name"), max_length=150)
+    email = models.EmailField(("email address") )
 class Library(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     book = models.ForeignKey(Book, on_delete=models.CASCADE)

@@ -24,4 +24,9 @@ urlpatterns = [
 
     path('library/<int:user_id>/books/', book_list_by_user),
     path('library/<int:user_id>/books/<int:book_id>/', book_detail_by_user),
+
+    path('register/', RegisterView.as_view()),
+    path('login/', LoginView.as_view()),
+    path('logout/', LogoutView.as_view()),
+    path('user/', UserView.as_view()),
 ]
