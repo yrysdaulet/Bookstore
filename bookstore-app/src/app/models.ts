@@ -26,3 +26,7 @@ export interface AuthToken{
   access:string,
   refresh:string
 }
+export interface library{
+  access:string,
+  refresh:string
+}

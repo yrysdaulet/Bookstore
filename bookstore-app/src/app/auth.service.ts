@@ -46,4 +46,6 @@ export class AuthService {
   isLoggedIn() {
     return this.getToken() !== null;
   }
+
+  
 }

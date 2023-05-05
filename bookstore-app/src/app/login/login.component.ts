@@ -18,9 +18,9 @@ export class LoginComponent {
 
   login() {
     this.authService.login( this.username, this.password).subscribe((data) => {
-      this.loginService.logged=true;
+      // this.loginService.logged=true;
+      this.router.navigate(['/home']);
       localStorage.setItem('token', data.access)
-
     })
   }
 

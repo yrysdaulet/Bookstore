@@ -36,6 +36,7 @@ class User(AbstractUser):
     first_name = models.CharField(("first name"), max_length=150)
     last_name = models.CharField(("last name"), max_length=150)
     email = models.EmailField(("email address") )
+    list_display = ['id', 'username']
 class Library(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     book = models.ForeignKey(Book, on_delete=models.CASCADE)

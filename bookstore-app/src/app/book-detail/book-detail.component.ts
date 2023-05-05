@@ -38,6 +38,11 @@ export class BookDetailComponent implements OnInit{
       this.book = response.book;
     });
   }
+  // addToLibrary(){
+  //   this.bookService.addToLibrary(this.book.id).subscribe((response) => {
+  //     this.book = response.;
+  //   });
+  // }
   // @ts-ignore
 
 }

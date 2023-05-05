@@ -12,18 +12,19 @@
       <a routerLink='/about-us'>About Us</a>
     </div>
   </div>
-  <div *ngIf="!logged" class="login-container">
+  <div  class="login-container">
     <div class="login">
-      <a routerLink="/login"><button>Log in</button></a>
+      <a *ngIf="!login.isLoggedIn()" routerLink="/login"><button>Log in</button></a>
     </div>
     <div class="login">
-      <a routerLink="/signup"><button>Sign up</button></a>
+      <a *ngIf="!login.isLoggedIn()" routerLink="/signup"><button>Sign up</button></a>
     </div>
   </div>
 
-  <div *ngIf="logged" class="login-container">
+  <div *ngIf="login.isLoggedIn()" class="login-container">
     <div class="login">
       <button routerLink="/home" (click)="logout()">Log out</button>
     </div>
+    <div class="login"><i routerLink="/user-profile" class="fa fa-user"></i></div>
   </div>
 </div>

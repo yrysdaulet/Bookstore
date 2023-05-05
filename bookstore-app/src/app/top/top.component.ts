@@ -8,21 +8,22 @@ import {Router} from "@angular/router";
   styleUrls: ['./top.component.css']
 })
 export class TopComponent implements OnInit{
-  logged : boolean = this.login.logged
+  logged : boolean = this.login.isLoggedIn()
+  
 
-  constructor(private login:AuthService, private router:Router, private cd: ChangeDetectorRef) {
+  constructor(public login:AuthService, private router:Router, private cd: ChangeDetectorRef) {
+    
   }
   ngOnInit() {
-    this.logged = this.login.logged;
+    // this.logged = this.login.logged;
     this.cd.detectChanges();
     // if(!this.logged){
     //   this.router.navigate(['/home']);
     // }
   }
+
   logout(){
     this.login.logout();
-
-    this.logged = false;
-    this.cd.detectChanges();
+    this.router.navigate(['/']);
   }
 }
