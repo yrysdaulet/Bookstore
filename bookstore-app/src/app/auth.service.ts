@@ -11,7 +11,7 @@ export class AuthService {
   BASE_URL= 'http://127.0.0.1:8000/api/v1';
 
   constructor(private client: HttpClient) { }
-
+  logged: boolean = this.isLoggedIn();
   signUp(firstName: string, lastName: string, username: string, email: string, password: string): Observable<any> {
     const formData = {
       username: username,

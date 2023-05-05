@@ -11,16 +11,16 @@ export class LoginComponent {
   username: string;
   password: string;
 
-  constructor(private authService: AuthService, private router: Router) {
+  constructor(private authService: AuthService, private router: Router, private loginService:AuthService,) {
     this.username = ''
     this.password = ''
   }
 
   login() {
     this.authService.login( this.username, this.password).subscribe((data) => {
-      console.log(data);
-      console.log(data.access);
+      this.loginService.logged=true;
       localStorage.setItem('token', data.access)
+
     })
   }
 

@@ -6,7 +6,7 @@
   border-radius: 3px;
   padding: 30px;
   width: 300px;
-  height: 580px;
+  height: 500px;
   box-shadow:  0px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -48,11 +48,30 @@ input[type=submit]:hover {
 }
 .shelf {
   margin-left:380px;
-  margin-top: -250px;
+  margin-top: -160px;
   margin-bottom: 190px;
 }
 #bookshelf {
   width:850px;
   margin-top: -50%;
   margin-left: 100px;
+}
+
+.login {
+  margin-top: 20px;
+}
+
+.login button{
+  background-color: #202020;
+  border-radius: 3px;
+  color: white;
+  font-family: "Rockwell Extra";
+  width: 90%;
+  padding:7px;
+  justify-self: center;
+  font-size: 16px;
+  margin: 12px;
+}
+.login button:hover {
+  box-shadow: 0px 2px 4px rgba(0.12, 0.12, 0.12);
 }
