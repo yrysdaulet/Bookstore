@@ -14,7 +14,7 @@
   margin-top: -12%;
   width: 18rem;
 }
-#login, #signup {
+.login, #signup {
   border: none;
   border-radius: 5px;
   background-color: #202020;
@@ -24,7 +24,7 @@
   font-family:Rockwell Extra Bold;
   font-size: 1rem;
 }
-#login:hover, #signup:hover {
+.login:hover, #signup:hover {
   border: 2px solid #E3B58F;
   border-radius: 0.2rem;
 }
@@ -42,7 +42,7 @@
 .categories a:hover{
   color: #E3B58F;
 }
-#login-box {
+.login-box {
   margin-left: auto;
 }
 .login {

@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import {Observable} from "rxjs";
+import {AuthToken} from "./models";
 
 @Injectable({
   providedIn: 'root'
@@ -13,29 +14,35 @@ export class AuthService {
 
   signUp(firstName: string, lastName: string, username: string, email: string, password: string): Observable<any> {
     const formData = {
-      first_name: firstName,
-      last_name: lastName,
       username: username,
       email: email,
       password: password,
+      first_name: firstName,
+      last_name: lastName,
       groups:["2"]
     };
+    console.log(formData)
     return this.client.post(`${this.BASE_URL}/register/`, formData);
   }
 
-  // login(username: string, password: string) {
-  //   return this.http.post<any>(`${this.baseUrl}/login`, { username, password });
-  // }
+  login(username: string, password: string):Observable<AuthToken> {
+    const formData = {
+      username: username,
+      password: password,
+    }
+    return this.client.post<AuthToken>(`${this.BASE_URL}/token/`, formData);
+  }
 
-  // logout() {
-  //   localStorage.removeItem('token');
-  // }
-  //
-  // getToken() {
-  //   return localStorage.getItem('token');
-  // }
-  //
-  // isLoggedIn() {
-  //   return this.getToken() !== null;
-  // }
+
+  logout() {
+    localStorage.removeItem('token');
+  }
+
+  getToken() {
+    return localStorage.getItem('token');
+  }
+
+  isLoggedIn() {
+    return this.getToken() !== null;
+  }
 }

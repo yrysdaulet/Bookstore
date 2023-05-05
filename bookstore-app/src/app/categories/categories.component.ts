@@ -2,8 +2,9 @@ import {Component, OnInit} from '@angular/core';
 import { OwlOptions} from "ngx-owl-carousel-o";
 import {Book, Genre} from "../models";
 import {CategoryService} from "../category.service";
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 import {BookService} from "../book.service";
+import {AuthService} from "../auth.service";
 
 @Component({
   selector: 'app-categories',
@@ -29,10 +30,14 @@ export class CategoriesComponent implements OnInit{
   }
   genres: Genre[] = [];
   loaded: boolean = false;
-  constructor(private categoryService: CategoryService, private route: ActivatedRoute, private bookService: BookService) {
+
+  constructor(private categoryService: CategoryService, private route: ActivatedRoute, private bookService: BookService, private login:AuthService, private router:Router) {
   }
   ngOnInit() {
     this.getGenresWithBooks();
+    if (!this.login.isLoggedIn() ){
+      this.router.navigate(['/login']);
+    }
     }
 
   getGenresWithBooks(){
