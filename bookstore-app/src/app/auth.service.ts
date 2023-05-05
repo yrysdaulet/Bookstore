@@ -35,6 +35,7 @@ export class AuthService {
 
 
   logout() {
+    console.log(5);
     localStorage.removeItem('token');
   }
 

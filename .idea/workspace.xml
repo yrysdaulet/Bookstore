@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa10db63-0ff4-4218-a112-211b6cb193fe" name="Changes" comment="hajshda" />
+    <list default="true" id="aa10db63-0ff4-4218-a112-211b6cb193fe" name="Changes" comment="hajshda">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore-app/src/app/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore-app/src/app/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore-app/src/app/top/top.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore-app/src/app/top/top.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore-app/src/app/top/top.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore-app/src/app/top/top.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore-app/src/app/top/top.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore-app/src/app/top/top.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore-app/src/app/user-profile/user-profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore-app/src/app/user-profile/user-profile.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore_back/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore_back/db.sqlite3" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +41,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "node.js.selected.package.tslint": "(autodetect)",
-    "ts.external.directory.path": "C:\\Users\\77471\\Desktop\\KBTU\\Web-Dev-Project\\bookstore-app\\node_modules\\typescript\\lib"
+    "ts.external.directory.path": "C:\\Users\\Айжан\\Desktop\\Bookstore\\bookstore-app\\node_modules\\typescript\\lib"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

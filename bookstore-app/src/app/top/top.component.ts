@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {ChangeDetectorRef, Component, OnInit} from '@angular/core';
 import {AuthService} from "../auth.service";
 import {Router} from "@angular/router";
 
@@ -7,8 +7,18 @@ import {Router} from "@angular/router";
   templateUrl: './top.component.html',
   styleUrls: ['./top.component.css']
 })
-export class TopComponent {
+export class TopComponent implements OnInit{
   logged : boolean = this.login.isLoggedIn()
-  constructor(private login:AuthService, private router:Router) {
+
+  constructor(private login:AuthService, private router:Router, private cd: ChangeDetectorRef) {
+  }
+  ngOnInit() {
+    this.logged = this.login.isLoggedIn();
+    this.cd.detectChanges();
+  }
+  logout(){
+    this.login.logout();
+    this.logged = false;
+    this.cd.detectChanges();
   }
 }

@@ -1,26 +1,29 @@
 <div class="top">
-  <div class="logo">
-    <a routerLink=''><img id="logo" src="assets/images/logo.png"></a>
+  <div class="logo-container">
+    <div class="logo">
+      <a routerLink=''><img id="logo" src="assets/images/logo.png"></a>
+    </div>
   </div>
-  <div *ngIf="!logged">
-  <div class="login" class="login-box">
-    <a routerLink="/login"><button class="login">Log in</button></a>
-  <div class="login">
-    <a routerLink="/signup"><button id="signup">Sign up</button></a>
+  <div class="categories-container">
+    <div class="categories">
+      <a routerLink='/categories'>Genres</a>
+      <a routerLink='/authors'>Authors</a>
+      <a routerLink='/books'>Books</a>
+      <a routerLink='/about-us'>About Us</a>
+    </div>
   </div>
-  </div>
-
-  <div *ngIf="logged">
-    <div class="login-box">
-      <a routerLink="/home"><button class="login">Log out</button></a>
+  <div *ngIf="!logged" class="login-container">
+    <div class="login">
+      <a routerLink="/login"><button>Log in</button></a>
+    </div>
+    <div class="login">
+      <a routerLink="/signup"><button>Sign up</button></a>
     </div>
   </div>
 
-
-  <div class="categories">
-    <a routerLink='/categories'>Genres</a>
-    <a routerLink='/authors'>Authors</a>
-    <a routerLink='/books'>Books</a>
-    <a routerLink='/about-us'>About Us</a>
+  <div *ngIf="logged" class="login-container">
+    <div class="login">
+      <button routerLink="/home" (click)="logout()">Log out</button>
+    </div>
   </div>
 </div>

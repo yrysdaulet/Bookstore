@@ -2,35 +2,42 @@
   display: flex;
   width: 100%;
   position: fixed;
+  justify-content: space-between;
   background-color: white;
   top:0;
   left:0;
-  height: 12%;
+  height: 13%;
   border-bottom:1.5px solid #202020;
   background-color: white;
   z-index: 999;
 }
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #logo {
-  margin-top: -12%;
+  margin-top: 8%;
   width: 18rem;
 }
-.login, #signup {
-  border: none;
-  border-radius: 5px;
-  background-color: #202020;
-  color: white;
-  padding: 0.7rem 1rem;
-  margin: 0.5rem;
-  font-family:Rockwell Extra Bold;
-  font-size: 1rem;
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-.login:hover, #signup:hover {
-  border: 2px solid #E3B58F;
-  border-radius: 0.2rem;
+
+.categories-container {
 }
+
 .categories {
-  margin: auto 17% 0.3rem -76%;
+  position: absolute;
+  bottom: 0;
+  /*left:0;*/
+  right:10%;
+  left:24%;
 }
+
 .categories a{
   /*text-align: center;*/
   text-decoration: none;
@@ -42,9 +49,26 @@
 .categories a:hover{
   color: #E3B58F;
 }
-.login-box {
-  margin-left: auto;
+
+.login button{
+  background-color: #202020;
+  border-radius: 3px;
+  color: white;
+  font-family: "Rockwell Extra";
+  width: 80px;
+  padding:7px;
+  font-size: 16px;
+  margin: 12px;
+}
+.login button:hover {
+  box-shadow: 0px 2px 4px rgba(0.12, 0.12, 0.12);
 }
 .login {
-  margin: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-container {
+  display: flex;
+  justify-content: center;
 }
