@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-=_a9h5v(n%9!v1!zakw^a0uf!=r(*#ef2l%0$&u1r2_q%26#%r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost',  '127.0.0.1']
 
 
 # Application definition
@@ -139,9 +139,7 @@ REST_FRAMEWORK = {
     'rest_framework.renderers.JSONRenderer',
     'rest_framework.renderers.BrowsableAPIRenderer' # this line allows change info directly in browsers using django service
     ],
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
-    )
+
 }
 
 

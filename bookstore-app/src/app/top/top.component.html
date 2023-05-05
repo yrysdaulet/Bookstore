@@ -2,12 +2,21 @@
   <div class="logo">
     <a routerLink=''><img id="logo" src="assets/images/logo.png"></a>
   </div>
-  <div class="login" id="login-box">
-    <a routerLink="/login"><button id="login">Log in</button></a>
-  </div>
+  <div *ngIf="!logged">
+  <div class="login" class="login-box">
+    <a routerLink="/login"><button class="login">Log in</button></a>
   <div class="login">
     <a routerLink="/signup"><button id="signup">Sign up</button></a>
   </div>
+  </div>
+
+  <div *ngIf="logged">
+    <div class="login-box">
+      <a routerLink="/home"><button class="login">Log out</button></a>
+    </div>
+  </div>
+
+
   <div class="categories">
     <a routerLink='/categories'>Genres</a>
     <a routerLink='/authors'>Authors</a>

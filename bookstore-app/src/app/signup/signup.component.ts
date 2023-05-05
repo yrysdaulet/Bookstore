@@ -23,7 +23,7 @@ export class SignupComponent {
   }
 
   signUp(){
-    this.authService.signUp(this.username, this.email, this.password, this.lastName, this.firstName).subscribe((data)=>{
+    this.authService.signUp(this.firstName, this.lastName, this.username, this.email, this.password).subscribe((data)=>{
       console.log(data);
     })
   }

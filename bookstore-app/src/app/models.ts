@@ -21,3 +21,8 @@ export interface Book {
   rating_value: number;
 
 }
+
+export interface AuthToken{
+  access:string,
+  refresh:string
+}

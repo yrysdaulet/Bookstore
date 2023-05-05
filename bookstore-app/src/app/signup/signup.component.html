@@ -5,11 +5,11 @@
       <fieldset>
         <label for="firstname">FirstName:</label>
         <br>
-        <input type="text" [(ngModel)]="firstName" id="firstname" required>
+        <input type="text" [(ngModel)]="firstName" id="firstname">
         <br>
         <label for="lastname">LastName:</label>
         <br>
-        <input type="text" [(ngModel)]="lastName" id="lastname" required>
+        <input type="text" [(ngModel)]="lastName" id="lastname">
         <br>
         <label for="username">Username:</label>
         <br>
@@ -21,7 +21,7 @@
         <br>
         <label for="password">Password</label>
         <br>
-        <input type="password" id="password" name="password">
+        <input type="password" [(ngModel)]="password" id="password" name="password">
         <br>
         <div id="line"></div>
         <button (click)="signUp()">Sign up</button>
