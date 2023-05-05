@@ -13,6 +13,7 @@ from .serializers import *
 class BookViewSet(viewsets.ModelViewSet):  # need to rewrite funcs
     queryset = Book.objects.all()
     serializer_class = BookSerializer
+    permission_classes = [IsAuthenticated, DjangoModelPermissions]
 
 @api_view(['POST'])
 def rate_book(request, id):
@@ -28,19 +29,23 @@ def rate_book(request, id):
 class GenreViewSet(viewsets.ModelViewSet):
     queryset = Genre.objects.all()
     serializer_class = GenreSerializer
+    permission_classes = [IsAuthenticated, DjangoModelPermissions]
 
 
 class AuthorViewSet(viewsets.ModelViewSet):
     queryset = Author.objects.all()
     serializer_class = AuthorSerializer
+    permission_classes = [IsAuthenticated, DjangoModelPermissions]
 
 
 class TaskViewSet(viewsets.ModelViewSet):
     queryset = Task.objects.all()
     serializer_class = TaskSerializer
+    permission_classes = [IsAuthenticated, DjangoModelPermissions]
 
 
 class BookListByGenre(generics.ListAPIView):
+    permission_classes = [IsAuthenticated, DjangoModelPermissions]
     serializer_class = BookSerializer
 
     def get_queryset(self):
@@ -51,6 +56,7 @@ class BookListByGenre(generics.ListAPIView):
 
 class BookDetailByGenre(generics.RetrieveAPIView):
     serializer_class = BookSerializer
+    permission_classes = [IsAuthenticated, DjangoModelPermissions]
 
     def get_object(self):
         genre_id = self.kwargs['genre_id']
@@ -61,6 +67,7 @@ class BookDetailByGenre(generics.RetrieveAPIView):
 
 class BookListByAuthor(generics.ListAPIView):
     serializer_class = BookSerializer
+    permission_classes = [IsAuthenticated, DjangoModelPermissions]
 
     def get_queryset(self):
         author_id = self.kwargs['author_id']
@@ -70,6 +77,7 @@ class BookListByAuthor(generics.ListAPIView):
 
 class BookDetailByAuthor(generics.RetrieveAPIView):
     serializer_class = BookSerializer
+    permission_classes = [IsAuthenticated, DjangoModelPermissions]
 
     def get_object(self):
         author_id = self.kwargs['author_id']

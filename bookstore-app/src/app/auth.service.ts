@@ -21,7 +21,7 @@ export class AuthService {
       last_name: lastName,
       groups:["2"]
     };
-    console.log(formData)
+    // console.log(formData)
     return this.client.post(`${this.BASE_URL}/register/`, formData);
   }
 
