@@ -21,7 +21,6 @@ export class LoginComponent {
       console.log(data);
       console.log(data.access);
       localStorage.setItem('token', data.access)
-
     })
   }
 

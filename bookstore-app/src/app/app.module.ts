@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http';
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule} from "ngx-owl-carousel-o";
 
@@ -21,6 +21,7 @@ import { AuthorsComponent } from './authors/authors.component';
 import { AuthorDetailComponent } from './author-detail/author-detail.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import {FormsModule} from "@angular/forms";
+import {AuthInterceptor} from "./AuthInterceptor";
 // import { BookDetailsComponent } from './book-details/book-details.component';
 
 
@@ -50,7 +51,13 @@ import {FormsModule} from "@angular/forms";
     CarouselModule,
     FormsModule
   ],
-  providers: [],
+    providers: [
+      {
+        provide: HTTP_INTERCEPTORS,
+        useClass: AuthInterceptor,
+        multi: true
+      }
+    ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

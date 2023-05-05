@@ -34,10 +34,10 @@ export class CategoriesComponent implements OnInit{
   constructor(private categoryService: CategoryService, private route: ActivatedRoute, private bookService: BookService, private login:AuthService, private router:Router) {
   }
   ngOnInit() {
-    this.getGenresWithBooks();
     if (!this.login.isLoggedIn() ){
       this.router.navigate(['/login']);
     }
+    this.getGenresWithBooks();
     }
 
   getGenresWithBooks(){

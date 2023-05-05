@@ -1,7 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {Author, Book} from "../models";
 import {AuthorService} from "../author.service";
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
+import {AuthService} from "../auth.service";
 
 @Component({
   selector: 'app-author-detail',
@@ -14,11 +15,14 @@ export class AuthorDetailComponent implements OnInit{
   books: Book[] = [];
 
   ngOnInit(){
+    if (!this.login.isLoggedIn() ){
+      this.router.navigate(['/login']);
+    }
     this.getAuthor();
     this.getBooks();
   }
 
-  constructor(private authorService: AuthorService, private route: ActivatedRoute) {
+  constructor(private authorService: AuthorService, private route: ActivatedRoute,private login:AuthService, private router:Router) {
 
   }
   getAuthor(){

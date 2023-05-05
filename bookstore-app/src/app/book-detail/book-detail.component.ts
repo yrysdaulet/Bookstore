@@ -2,7 +2,8 @@ import {ChangeDetectorRef, Component, NgZone, OnInit} from '@angular/core';
 import {BookService} from "../book.service";
 import {Book} from "../models";
 import {ActivatedRoute} from "@angular/router";
-
+import {AuthService} from "../auth.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-book-detail',
@@ -16,9 +17,12 @@ export class BookDetailComponent implements OnInit{
   // @ts-ignore
   rating:number;
   ngOnInit() {
+    if (!this.login.isLoggedIn() ){
+      this.router.navigate(['/login']);
+    }
     this.getBook();
   }
-  constructor(private bookService: BookService, private route: ActivatedRoute) {
+  constructor(private bookService: BookService, private route: ActivatedRoute,private login:AuthService, private router:Router) {
   }
   getBook(){
     this.route.paramMap.subscribe((params)=>{
